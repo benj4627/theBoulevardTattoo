@@ -2,11 +2,13 @@
 
 /* // variables */
 :root {
+    --hugeSpacing: 5em;
     --largeSpacing: 2rem; 
     --smallSpacing: 1rem; 
     --largeBorderRadius: 15px;
     --smallBorderRadius: 5px; 
     --orangeMain: #DA5F25; 
+    --lightOrange: #FC8C58; 
     --baggrundBeige: #FEF7EA;
     --lysBaggrund: #FFFCF6;
     --green: #005B46;
@@ -14,7 +16,7 @@
 }
 
 /* // fonts   */
-@import url("https://use.typekit.net/yji7bnv.css");
+@import url("https://use.typekit.net/yfy0diq.css");
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
@@ -32,42 +34,53 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--orangeMain);
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+
+a:hover {
+    font-weight: 1000;
+    font-size: 1.35rem;
+    color: var(--lightOrange);
 }
 
 h1 {
-    font-family: "proxima-nova", sans-serif;
+    font-family: "proxima-nova-wide", sans-serif;
     font-size: 60px;
+    letter-spacing: .3rem;
     font-weight: 1000;
     color: var(--green);
 }
 h2 {
-    font-family: "proxima-nova", sans-serif;
+    font-family: "proxima-nova-wide", sans-serif;
     font-size: 40px;
-    font-weight: 700;
+    letter-spacing: .2rem;
+    font-weight: 800;
     color: var(--brownText);
 }
 
 h3 {
-    font-family: "proxima-nova", sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--brownText);
+    font-family: "proxima-nova-wide", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 h4,
 h5,
 h6 {
-    font-family: "proxima-nova", sans-serif;
+    font-family: "proxima-nova-wide", sans-serif;
     text-wrap: balance;
     font-weight: normal;
     color: var(--brownText);
 }
 
 p {
-    text-wrap: pretty; 
-    max-width: 75ch;
+    text-wrap: balance; 
+    max-width: 45ch;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     color: var(--brownText);
 }
 
@@ -76,7 +89,6 @@ picture,
 svg,
 video {
     max-width: 100%;
-    display: block; 
     height: auto; 
 }
 
@@ -84,17 +96,167 @@ button,
 input,
 form {
     font: inherit;
+    border: unset; 
 }
 
 /* utility classes */
 .contentContainer {
     max-width: 1400px;
+    margin: 0 auto;
 }
 
 .textMargin {
-    margin: 0 80% ;
+    margin: 0 5% ;
 }
 
 /* the Boulevard Tattoo start */
+/* grid and vision section */
+.visionContainer,
+.tabContent {
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    align-items: center;
+    margin-bottom: var(--hugeSpacing);
+}
 
+.visionText {
+    grid-column: 1 / 2;
+}
+
+.visionText h2 {
+    margin-bottom: var(--smallSpacing);
+    color: var(--brownText);
+}
+
+.visionImg {
+    max-width: 40vw;
+    height: auto;
+    grid-column: 2 / 3;
+}
+.visionImg img {
+    width: 100%;
+    border-radius: var(--smallBorderRadius);
+}
+/* grid and vision section end */
+
+/* tabs styling Start*/
+/* tabs buttons */
+.tabsBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.activeTab {
+    background-color: var(--brownText);
+    padding: 1rem 4rem;
+    border-top-left-radius: var(--smallBorderRadius);
+    border-top-right-radius: var(--smallBorderRadius);
+    color: var(--baggrundBeige);
+    margin: unset; 
+}
+
+.inactiveTab {
+    color: var(--orangeMain); 
+    background-color: var(--baggrundBeige);
+    padding: 1rem 4rem;
+    transition: .2s ease-in-out;
+}
+
+.inactiveTab:hover {
+    border-top-left-radius: var(--smallBorderRadius);
+    border-top-right-radius: var(--smallBorderRadius);
+    transform: scale(1.05);
+    color: var(--lightOrange);
+    cursor: pointer;
+}
+
+/* tabs buttons end */
+.tabContent {
+    background-color: var(--brownText);
+    padding: 4rem 0;
+    display: grid;
+}
+
+.tabsBackground {
+    width: 100vw;
+    background-color: var(--brownText);
+}
+
+.tabTextContent {
+    grid-column: 1 / 2;
+}
+
+.tabTextContent p, h2 {
+    color: var(--baggrundBeige);
+}
+
+.tabTextContent h2 {
+    margin-bottom: var(--smallSpacing);
+}
+
+.tabImg {
+    max-width: 40vw;
+    height: auto;
+    grid-column: 2 / 3;
+}
+
+.tabImg img {
+    width: 100%;
+    border-radius: var(--smallBorderRadius);
+}
+/* tabs styling end */
+
+/* media query */
+@media only screen and (min-width: 1200px) {
+    .visionContainer,
+    .tabContent {
+        padding: 4rem 5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* grid and vision section */
+    .visionContainer,
+    .tabContent {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 10%;
+        margin-right: 10%; 
+    }
+
+    .visionImg,
+    .tabImg {
+        max-width: 100%;
+        margin: 0 auto;
+        grid-column: 1 ;
+    }
+
+    .activeTab,
+    .inactiveTab {
+        width: 100%;
+        padding: .8rem;
+    }
+
+    
+    .tabsBtnContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .activeTab h3 {
+        font-size: 1.4rem;
+    }
+    
+    .inactiveTab h3 {
+        font-size: 1.4rem;
+    }
+
+    /* tabTextContent */
+    .tabTextContent,
+    .tabImg {
+        margin-bottom: var(--largeSpacing);
+    }
+}
 /* The Boulevard Tattoo end */
