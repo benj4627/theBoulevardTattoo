@@ -2,6 +2,7 @@
 
 /* // variables */
 :root {
+    --hugeSpacing: 5em;
     --largeSpacing: 2rem; 
     --smallSpacing: 1rem; 
     --largeBorderRadius: 15px;
@@ -14,7 +15,7 @@
 }
 
 /* // fonts   */
-@import url("https://use.typekit.net/yji7bnv.css");
+@import url("https://use.typekit.net/yfy0diq.css");
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
@@ -35,21 +36,22 @@ a {
 }
 
 h1 {
-    font-family: "proxima-nova", sans-serif;
+    font-family: "proxima-nova-wide", sans-serif;
     font-size: 60px;
     letter-spacing: .3rem;
     font-weight: 1000;
     color: var(--green);
 }
 h2 {
-    font-family: "proxima-nova", sans-serif;
+    font-family: "proxima-nova-wide", sans-serif;
     font-size: 40px;
-    font-weight: 700;
+    letter-spacing: .2rem;
+    font-weight: 800;
     color: var(--brownText);
 }
 
 h3 {
-    font-family: "proxima-nova", sans-serif;
+    font-family: "proxima-nova-wide", sans-serif;
     font-size: 28px;
     font-weight: 700;
     color: var(--brownText);
@@ -58,7 +60,7 @@ h3 {
 h4,
 h5,
 h6 {
-    font-family: "proxima-nova", sans-serif;
+    font-family: "proxima-nova-wide", sans-serif;
     text-wrap: balance;
     font-weight: normal;
     color: var(--brownText);
@@ -66,10 +68,10 @@ h6 {
 
 p {
     text-wrap: pretty; 
-    max-width: 54ch;
-    font-size: 1.4rem;
+    max-width: 45ch;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     color: var(--brownText);
 }
 
@@ -100,11 +102,13 @@ form {
 
 /* the Boulevard Tattoo start */
 /* grid and vision section */
-.visionContainer {
+.visionContainer,
+.tabContent {
     display: grid;
     grid-gap: var(--largeSpacing);
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
     align-items: center;
+    margin-bottom: var(--hugeSpacing);
 }
 
 .visionText {
@@ -113,6 +117,7 @@ form {
 
 .visionText h2 {
     margin-bottom: var(--smallSpacing);
+    color: var(--brownText);
 }
 
 .visionImg {
@@ -128,6 +133,40 @@ form {
 /* tabs styling */
 
 
+.tabContent {
+    background-color: var(--brownText);
+    padding: 4rem 0;
+}
+
+.tabsBackground {
+    width: 100vw;
+    background-color: var(--brownText);
+}
+
+.tabTextContent {
+    grid-column: 1 / 2;
+}
+
+.tabTextContent p, h2 {
+    color: var(--baggrundBeige);
+}
+
+.tabTextContent h2 {
+    margin-bottom: var(--smallSpacing);
+}
+
+.tabImg {
+    max-width: 60vw;
+    height: auto;
+    grid-column: 2 / 3;
+}
+
+.tabImg img {
+    width: 100%;
+    border-radius: var(--smallBorderRadius);
+}
+
 /* The Boulevard Tattoo end */
 
 /* media query */
+/* lav media query som give margin 0 5% ved under 1500px og ned til mobil */
