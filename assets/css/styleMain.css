@@ -145,6 +145,7 @@ form {
 .tabsBtnContainer {
     display: flex;
     align-items: center;
+    justify-content: center
 }
 
 .activeTab {
@@ -206,7 +207,56 @@ form {
     border-radius: var(--smallBorderRadius);
 }
 /* tabs styling end */
-/* The Boulevard Tattoo end */
 
 /* media query */
-/* lav media query som give margin 0 5% ved under 1500px og ned til mobil */
+@media only screen and (min-width: 1200px) {
+    .visionContainer,
+    .tabContent {
+        padding: 4rem 5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* grid and vision section */
+    .visionContainer,
+    .tabContent {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 10%;
+        margin-right: 10%; 
+    }
+
+    .visionImg,
+    .tabImg {
+        max-width: 100%;
+        margin: 0 auto;
+        grid-column: 1 ;
+    }
+
+    .activeTab,
+    .inactiveTab {
+        width: 100%;
+        padding: .8rem;
+    }
+
+    
+    .tabsBtnContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .activeTab h3 {
+        font-size: 1.4rem;
+    }
+    
+    .inactiveTab h3 {
+        font-size: 1.4rem;
+    }
+
+    /* tabTextContent */
+    .tabTextContent,
+    .tabImg {
+        margin-bottom: var(--largeSpacing);
+    }
+}
+/* The Boulevard Tattoo end */

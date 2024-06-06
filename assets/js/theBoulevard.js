@@ -81,6 +81,5 @@ tabBtns.forEach((btn, index) => {
         tabContents[index].innerHTML = tabContent[index];
     });
 });
-
-//simluerer et click event på den tab med tilhørende indhold som har plads 0 i index, hvilket er historie. Derfor er den aktiv som default når siden loades. 
+//kalder click metoden på den første tab knap, den som er på index plads 0, hvilket er historie. Det sker når siden loader, og derfor vises den sektion som default. 
 tabBtns[0].click();
