@@ -67,7 +67,7 @@ h6 {
 p {
     text-wrap: pretty; 
     max-width: 54ch;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
     line-height: 1.5rem;
     color: var(--brownText);
@@ -105,7 +105,6 @@ form {
     grid-gap: var(--largeSpacing);
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     align-items: center;
-    margin: 0 5%;
 }
 
 .visionText {
@@ -117,7 +116,7 @@ form {
 }
 
 .visionImg {
-    max-width: 45vw;
+    max-width: 40vw;
     height: auto;
     grid-column: 2 / 3;
 }
