@@ -89,7 +89,6 @@ picture,
 svg,
 video {
     max-width: 100%;
-    display: block; 
     height: auto; 
 }
 
@@ -97,6 +96,7 @@ button,
 input,
 form {
     font: inherit;
+    border: unset; 
 }
 
 /* utility classes */
@@ -175,6 +175,7 @@ form {
 .tabContent {
     background-color: var(--brownText);
     padding: 4rem 0;
+    display: grid;
 }
 
 .tabsBackground {
@@ -205,7 +206,6 @@ form {
     border-radius: var(--smallBorderRadius);
 }
 /* tabs styling end */
-
 /* The Boulevard Tattoo end */
 
 /* media query */
