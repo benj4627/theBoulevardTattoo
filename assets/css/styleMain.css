@@ -37,6 +37,7 @@ a {
 h1 {
     font-family: "proxima-nova", sans-serif;
     font-size: 60px;
+    letter-spacing: .3rem;
     font-weight: 1000;
     color: var(--green);
 }
@@ -65,7 +66,8 @@ h6 {
 
 p {
     text-wrap: pretty; 
-    max-width: 75ch;
+    max-width: 54ch;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
     line-height: 1.5rem;
     color: var(--brownText);
@@ -89,12 +91,44 @@ form {
 /* utility classes */
 .contentContainer {
     max-width: 1400px;
+    margin: 0 auto;
 }
 
 .textMargin {
-    margin: 0 80% ;
+    margin: 0 5% ;
 }
 
 /* the Boulevard Tattoo start */
+/* grid and vision section */
+.visionContainer {
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    align-items: center;
+    margin: 0 5%;
+}
+
+.visionText {
+    grid-column: 1 / 2;
+}
+
+.visionText h2 {
+    margin-bottom: var(--smallSpacing);
+}
+
+.visionImg {
+    max-width: 45vw;
+    height: auto;
+    grid-column: 2 / 3;
+}
+.visionImg img {
+    width: 100%;
+    border-radius: var(--smallBorderRadius);
+}
+/* grid and vision section end */
+/* tabs styling */
+
 
 /* The Boulevard Tattoo end */
+
+/* media query */
