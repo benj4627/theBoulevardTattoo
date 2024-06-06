@@ -9,7 +9,7 @@
     --smallBorderRadius: 5px; 
     --orangeMain: #DA5F25; 
     --lightOrange: #FC8C58; 
-    --baggrundBeige: #FEF7EA;
+    --baggrundBeige: #ffedcf;
     --lysBaggrund: #FFFCF6;
     --green: #005B46;
     --brownText: #3E302A;
@@ -262,5 +262,20 @@ form {
 /* The Boulevard Tattoo end */
 
 /* booking start */
+/* header */
+.bookingHeaderContainer h1 {
+    text-align: center;
+    margin: var(--smallSpacing);
+}
+
+.bookingHeaderContainer p {
+    margin: 1rem auto;
+    max-width: 64ch;
+}
+/* header slut */
+/* booking form start */
+
+/* booking form slut */
+
 
 /* booking slut */
