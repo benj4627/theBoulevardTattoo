@@ -27,6 +27,7 @@
 
 body {
     min-height: 100vh;
+    background-color: var(--baggrundBeige);
 }
 
 a {
@@ -95,8 +96,5 @@ form {
 }
 
 /* the Boulevard Tattoo start */
-body {
-    background-color: var(--baggrundBeige);
-}
 
 /* The Boulevard Tattoo end */
