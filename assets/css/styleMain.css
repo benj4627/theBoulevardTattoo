@@ -1,6 +1,6 @@
-// general styling 
+/* // general styling  */
 
-// variables
+/* // variables */
 :root {
     --largeSpacing: 2rem; 
     --smallSpacing: 1rem; 
@@ -13,10 +13,11 @@
     --brownText: #3E302A;
 }
 
-// fonts  
-@import url("https://use.typekit.net/yji7bnv.css");
+/* // fonts   */
 @import url("https://use.typekit.net/yji7bnv.css");
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 /* reset template */
 * {
     box-sizing: border-box;
@@ -34,23 +35,25 @@ a {
 
 h1 {
     font-family: "proxima-nova", sans-serif;
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 1000;
 }
 h2 {
     font-family: "proxima-nova", sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 700;
 }
 
 h3 {
     font-family: "proxima-nova", sans-serif;
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 700;
 }
+
 h4,
 h5,
 h6 {
+    font-family: "proxima-nova", sans-serif;
     text-wrap: balance;
     font-weight: normal;
 }
@@ -75,4 +78,13 @@ button,
 input,
 form {
     font: inherit;
+}
+
+/* utility classes */
+.contentContainer {
+    max-width: 1400px;
+}
+
+.textMargin {
+    margin: 0 80% ;
 }
