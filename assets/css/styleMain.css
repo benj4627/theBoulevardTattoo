@@ -331,6 +331,24 @@ form button:hover {
     border-radius: var(--largeBorderRadius);
 }
 
+input[type="submit"] {
+    color: var(--orangeMain);
+    background-color: var(--baggrundBeige);
+    border: 3.5px solid #DA5F25;
+    border-radius: var(--smallBorderRadius);
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    font-family: "proxima-nova-wide", sans-serif;
+    font-weight: 800;
+    transition: .3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    color: var(--baggrundBeige);
+    background-color: var(--orangeMain);
+    transform: scale(107%);
+    border-radius: var(--largeBorderRadius);  
+}
 
 /* booking form slut */
 
