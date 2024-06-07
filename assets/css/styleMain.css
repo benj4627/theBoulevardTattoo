@@ -32,6 +32,10 @@ body {
     background-color: var(--baggrundBeige);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 a {
     text-decoration: none;
     color: var(--orangeMain);
@@ -600,8 +604,8 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: var(--smallBorderRadius);
-    margin-top: var(--hugeSpacing);
-    margin-bottom: var(--hugeSpacing);
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -661,8 +665,66 @@ h4 {
     position: relative;
     top: -50px;
 }
-
 /* review sektion slut */
+
+/* blog entry start */
+.blogPostsEntry h2 {
+    color: var(--brownText);
+    margin-bottom: var(--largeSpacing);
+}
+.blogPostEntryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    grid-gap: var(--smallSpacing);
+    padding-bottom: var(--hugeSpacing);
+}
+
+.blogPostEntryContent img {
+    border-radius: var(--smallBorderRadius);
+    object-fit: cover;
+    height: 400px;
+}
+
+.blogPostEntryContent {
+    transition: .2s ease-in-out;
+}
+
+.blogPostEntryContent:hover {
+    transform: scale(102%);
+}
+
+.datoEntry {
+    margin-bottom: .5rem;
+    font-size: 0.9rem;
+    color: var(--brownText);
+}
+
+.blogEntryText h3{
+    color: var(--brownText);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: var(--smallSpacing);
+}
+
+.returnToTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.returnToTop i {
+    color: var(--orangeMain);
+    font-size: 1.5rem;
+}
+
+.returnToTop p {
+    font-family: "proxima-nova-wide", sans-serif; 
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--orangeMain);
+}
+/* blog entry slut */
 
 /* media queries */
 /* HUSK media query der giver margin osv til mindre computer skærme som din måske bare translate transform scale 0.8?? */
