@@ -454,7 +454,7 @@ h4 {
 .kunstnereContainer {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
-    gap: var(--hugeSpacing);
+    gap: var(--largeSpacing);
     padding-bottom: var(--hugeSpacing);
     padding-top: var(--largeSpacing);
 }
