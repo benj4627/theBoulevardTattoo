@@ -443,5 +443,58 @@ input[type="submit"] {
     font-weight: 700;
 }
 
+/* cards kunstnere */
+.kunstnereContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: var(--hugeSpacing);
+}
+.kunsterCardContainer {
+    width: 100%;
+}
+
+.nameKunster {
+    background-color: var(--lysBaggrund);
+    border-top-left-radius: var(--smallBorderRadius);
+    border-top-right-radius: var(--smallBorderRadius);
+    padding: var(--largeSpacing);
+}
+
+.nameKunster h3 {
+    font-size: 2rem;
+    color: var(--orangeMain);
+    font-weight: 1000;
+}
+
+.imgKunster {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgKunster img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -50px; 
+    border-bottom-left-radius: var(--smallBorderRadius);
+    border-bottom-right-radius: var(--smallBorderRadius);
+}
+
+.imgKunster1 {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgKunster1 img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -10px; 
+    border-bottom-left-radius: var(--smallBorderRadius);
+    border-bottom-right-radius: var(--smallBorderRadius);
+}
+/* cards kunstnere slut */
 
 /* forside styling slut */
