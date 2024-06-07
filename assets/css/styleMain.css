@@ -520,14 +520,14 @@ h4 {
 }
 
 .galleriContainer {
-    height: 85vh; 
+    height: fit-content; 
 }
+
 .galleriGridContainer {
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
     grid-template-rows: repeat(3, 1fr);
     gap: var(--largeSpacing); 
-    height: 50%;
 }
 
 .galleriGridContainer img {
@@ -582,8 +582,12 @@ h4 {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
 }
-
-
 /* galleri sektion slut */
 
+/* reviews sektion start */
+
+/* review sektion slut */
+
+/* media queries */
+/* HUSK media query der giver margin osv til mindre computer skærme som din */
 /* forside styling slut */
