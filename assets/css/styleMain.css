@@ -436,6 +436,7 @@ input[type="submit"] {
     align-items: center;
     flex-direction: column;
     padding-top: var(--hugeSpacing);
+    margin-bottom: var(--largeSpacing);
 }
 .valuesContent h2 {
     color: var(--brownText);
@@ -444,13 +445,21 @@ input[type="submit"] {
 }
 
 /* cards kunstnere */
+h2 {
+    color: var(--brownText);
+}
+
 .kunstnereContainer {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: var(--hugeSpacing);
+    padding-bottom: var(--hugeSpacing);
+    padding-top: var(--largeSpacing);
 }
 .kunsterCardContainer {
     width: 100%;
+    transition: .2s ease-in-out;
+    
 }
 
 .nameKunster {
@@ -494,6 +503,12 @@ input[type="submit"] {
     top: -10px; 
     border-bottom-left-radius: var(--smallBorderRadius);
     border-bottom-right-radius: var(--smallBorderRadius);
+}
+
+.kunsterCardContainer:hover {
+    transform: scale(102%);
+    border-bottom: var(--largeBorderRadius);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.59)
 }
 /* cards kunstnere slut */
 
