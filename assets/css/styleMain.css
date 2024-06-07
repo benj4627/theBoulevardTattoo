@@ -445,8 +445,10 @@ input[type="submit"] {
 }
 
 /* cards kunstnere */
-h2 {
+h4 {
     color: var(--brownText);
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .kunstnereContainer {
@@ -459,7 +461,6 @@ h2 {
 .kunsterCardContainer {
     width: 100%;
     transition: .2s ease-in-out;
-    
 }
 
 .nameKunster {
