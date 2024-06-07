@@ -727,7 +727,59 @@ h4 {
 /* blog entry slut */
 
 /* media queries */
-/* HUSK media query der giver margin osv til mindre computer skærme som din måske bare translate transform scale 0.8?? */
+@media (max-width: 768px) {
+    .introTextContainer,
+    .kunstnereContainer,
+    .galleriContainer,
+    .reviews,
+    .blogPostsEntry {
+      width: 90%;
+    }
+  
+    .blogPostEntryGrid {
+        grid-template-columns: repeat(1, minmax(160px, 1fr));
+        margin: var(--smallSpacing);
+        padding-bottom: var(--smallSpacing);
+    }
+
+    .blogPostsEntry {
+        margin-top: 5rem;
+    }
+
+    .kunstnereContainer {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+  
+    .galleriGridContainer {
+      grid-template-columns: repeat(1, minmax(100px, 1fr)); /* Change to 1 column */
+      grid-gap: var(--smallSpacing)
+    }
+
+    .reviewContainer {
+        width: 90%;
+        margin-top: 6rem;
+        margin-bottom: unset;
+    }
+  
+    .reviews {
+      flex-direction: column;
+    }
+    h4 {
+        padding: 0 5%;
+    }
+  }
+  
+@media only screen and (min-width: 1200px) {
+    h4 {
+        padding: 0 5%;
+    }
+    .kunstnereContainer,
+    .galleriContainer,
+    .reviews,
+    .blogPostsEntry {
+        margin: 0 5%;
+    }
+}
 /* forside styling slut */
 
 /* HUSK AT LAVE JAVASCRIPT SÅ TINGENE KOMMER FLVENDE IND FRA BUNDEN NÅR MAN SCROLLER!!! */
