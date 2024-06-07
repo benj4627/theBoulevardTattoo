@@ -727,7 +727,7 @@ h4 {
 /* blog entry slut */
 
 /* media queries */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .introTextContainer,
     .kunstnereContainer,
     .galleriContainer,
@@ -768,18 +768,6 @@ h4 {
         padding: 0 5%;
     }
   }
-  
-@media only screen and (min-width: 1200px) {
-    h4 {
-        padding: 0 5%;
-    }
-    .kunstnereContainer,
-    .galleriContainer,
-    .reviews,
-    .blogPostsEntry {
-        margin: 0 5%;
-    }
-}
 /* forside styling slut */
 
 /* HUSK AT LAVE JAVASCRIPT SÅ TINGENE KOMMER FLVENDE IND FRA BUNDEN NÅR MAN SCROLLER!!! */
