@@ -9,8 +9,8 @@
     --smallBorderRadius: 5px; 
     --orangeMain: #DA5F25; 
     --lightOrange: #FC8C58; 
-    --baggrundBeige: #FEF7EA;
-    --lysBaggrund: #FFFCF6;
+    --baggrundBeige: #ffedcf;
+    --lysBaggrund: #fff8eb;
     --green: #005B46;
     --brownText: #3E302A;
 }
@@ -260,3 +260,173 @@ form {
     }
 }
 /* The Boulevard Tattoo end */
+
+/* booking start */
+/* header */
+.bookingHeaderContainer h1 {
+    text-align: center;
+    margin: var(--smallSpacing);
+}
+
+.bookingHeaderContainer p {
+    margin: 1rem auto;
+    max-width: 64ch;
+    padding-bottom: var(--largeSpacing);
+}
+/* header slut */
+/* booking form start */
+.bookingFormContainer {
+    max-width: 35vw;
+    margin: 0 auto;
+} 
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+label {
+    font-family: "proxima-nova-wide", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--brownText);
+    padding-bottom: .2rem;
+    padding-top: var(--largeSpacing);
+}
+
+input {
+    padding: .5rem 0;
+    background-color: var(--baggrundBeige);
+    border-bottom: 1.5px solid #3E302A;
+    width: 100%;
+}
+
+.checkboxFlexContainer label{
+    margin-right: var(--largeSpacing);
+}
+
+textarea {
+    background-color: var(--lysBaggrund);
+    border: unset;
+    border-radius: var(--smallBorderRadius);
+    width: 100%;
+    height: 15vh;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 15px;
+    margin-right: 0.5rem;
+  }
+
+form button,
+input[type="submit"] {
+    color: var(--orangeMain);
+    background-color: var(--baggrundBeige);
+    border: 3.5px solid #DA5F25;
+    border-radius: var(--smallBorderRadius);
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    font-family: "proxima-nova-wide", sans-serif;
+    font-weight: 800;
+    transition: .3s ease-in-out;
+}
+
+form button:hover,
+input[type="submit"]:hover {
+    color: var(--baggrundBeige);
+    background-color: var(--orangeMain);
+    transform: scale(107%);
+    border-radius: var(--largeBorderRadius);
+}
+
+input[type="submit"] {
+    margin: 4rem auto;
+    max-width: 300px;
+}
+/* form slut */
+/* spørgsmål sektion */
+.questionsContainer {
+    background-color: var(--lysBaggrund);
+    padding: 3rem 0;
+    margin-bottom: var(--hugeSpacing);
+}
+
+.questionsContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionsText h2 {
+    color: var(--brownText);
+    font-weight: 700;
+    margin-bottom: var(--smallSpacing);
+}
+
+.questionsButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionsButton button {
+    color: var(--orangeMain);
+    background-color: var(--lysBaggrund); 
+    border: 3.5px solid #DA5F25;
+    border-radius: var(--smallBorderRadius);
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    font-family: "proxima-nova-wide", sans-serif;
+    font-weight: 800;
+    transition: .3s ease-in-out;
+    width: 180px;
+}
+
+.questionsButton button a {
+    all: unset; 
+}
+
+.questionsButton button:hover {
+    color: var(--lysBaggrund);
+    background-color: var(--orangeMain);
+    transform: scale(107%);
+    border-radius: var(--largeBorderRadius);
+    cursor: pointer;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .bookingHeaderContainer {
+        margin: 0 5%;
+    }
+
+    .bookingHeaderContainer h1 {
+        margin: unset;
+    }
+
+    .bookingFormContainer {
+        max-width: 90vw;
+        width: 100%;
+    }
+
+    .checkboxFlexContainer {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .questionsContent {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+}
+
+/* spørgsmål slut */
+
+/* booking form slut */
+
+
+/* booking slut */

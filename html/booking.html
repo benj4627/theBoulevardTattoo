@@ -8,19 +8,141 @@
       content="Udfyld formlen og book din tid hos The Boulevard Tattoo i Aalborg her."
     />
     <title>The Boulevard Tattoo - Booking</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../assets/images/LogoBrun.png"
-    />
+    <link rel="icon" type="image/x-icon" href="../assets/images/LogoBrun.png" />
     <link rel="stylesheet" href="./assets/css/style.min.css" />
     <link rel="stylesheet" href="../assets/css/styleMain.css" />
     <script src="./assets/js/script.js" defer></script>
+    <script src="../assets/js/booking.js" defer></script>
   </head>
 
   <body>
-    <header></header>
-    <main></main>
+    <header class="bookingHeaderContainer contentContainer">
+      <h1>BOOKING</h1>
+      <p class="headerTextBooking">
+        Uanset om du er ude efter et nyt kunstværk eller vil opfriske din
+        eksisterende tatovering er du kommet til det rette sted. Udfyld formen
+        herunder for at komme i gang med bookingprocessen. Vi vender altid
+        tilbage så hurtigt vi kan!
+      </p>
+    </header>
+    <main>
+      <div class="contentContainer">
+        <section class="bookingFormContainer">
+          <form>
+            <label for="name">Hvad er dit navn?</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Fulde navn"
+            />
+
+            <label for="phone">Hvad er dit telefonnummer?:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="+45 12345678"
+            />
+
+            <label for="email">Hvad er din email? </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="email@eksempel.dk"
+            />
+
+            <label for="placering">Tatoveringens placering på kroppen?</label>
+            <input
+              type="text"
+              id="placering"
+              name="placering"
+              placeholder="Angiv gerne flere muligheder hvis du ikke er sikker"
+            />
+
+            <label for="firstTattoo">Er det din første tatovering?</label>
+            <div class="checkboxFlexContainer">
+              <input
+                type="checkbox"
+                id="firstTattoo"
+                name="firstTattoo"
+                value="yes"
+              />
+              <label for="firstTattoo">Ja</label>
+              <input
+                type="checkbox"
+                id="firstTattooBox"
+                name="firstTattoo"
+                value="no"
+              />
+              <label for="firstTattoo">Nej</label>
+            </div>
+
+            <label for="size">Størrelse på tatovering:</label>
+            <input
+              type="text"
+              id="size"
+              name="size"
+              placeholder="Højde X bredde i cirka centimeter"
+            />
+
+            <label for="Referencebillede">Referencebilleder</label>
+            <button input type="submit">UPLOAD BILLEDER</button>
+
+            <label for="colors">Ønsker om farver?</label>
+            <div class="checkboxFlexContainer">
+              <input type="checkbox" id="colors" name="colors" value="yes" />
+              <label for="colors">Farve</label>
+              <input type="checkbox" id="colorsBox" name="colors" value="no" />
+              <label for="colors">Sort/hvid</label>
+            </div>
+
+            <label for="description">Beskrivelse</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              cols="50"
+              placeholder="Beskriv din idé eller motiv, så detaljeret du kan"
+            ></textarea>
+
+            <label for="comments">Eventuelle kommentarer</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              cols="0"
+              placeholder="Skriv eventuelle kommentarer her"
+            ></textarea>
+            <input type="submit" value="INDSEND FORMULAR" />
+          </form>
+        </section>
+      </div>
+
+      <section class="questionsContainer">
+        <article class="questionsContent contentContainer">
+          <div class="questionsText">
+            <h2>SPØRGSMÅL?</h2>
+            <p>
+              Kig i vores FAQ for svar på de mest almindelige spørgsmål eller
+              brug kontakt funktionen her på siden for at skrive til os.
+            </p>
+            <p>
+              Hvis du har brug for at lære trin for trin hvordan
+              tatoveringsprocessen foregår, kan du trykker her.
+            </p>
+          </div>
+          <div class="questionsButton">
+            <button><a href="./FAQ.html">FAQ</a></button>
+            <button><a href="./trinForTrin.html">TRIN FOR TRIN</a></button>
+          </div>
+        </article>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
