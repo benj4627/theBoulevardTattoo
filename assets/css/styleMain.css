@@ -347,6 +347,7 @@ input[type="submit"] {
     max-width: 300px;
 }
 /* form slut */
+
 /* spørgsmål sektion */
 .questionsContainer {
     background-color: var(--lysBaggrund);
@@ -425,8 +426,22 @@ input[type="submit"] {
 }
 
 /* spørgsmål slut */
-
-/* booking form slut */
-
-
 /* booking slut */
+
+/* forsiden styling start */
+
+.introTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: var(--hugeSpacing);
+}
+.valuesContent h2 {
+    color: var(--brownText);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/* forside styling slut */
