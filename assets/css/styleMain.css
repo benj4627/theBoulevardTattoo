@@ -438,8 +438,100 @@ input[type="submit"] {
 
 /* Regler og vilkar start*/
 
+/* hero tekst og billede component styles start */
+#reglerOgvilkarPage header{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+#reglerOgvilkarPage .heroBillede{
+    width: 100%;
+    height: 60%; 
+    /* margin: 0 auto; */
+}
+#reglerOgvilkarPage .heroBillede img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: var(--hugeSpacing);
+}
 
 
+
+#reglerOgvilkarPage h1{
+    text-transform: uppercase;
+    font-size: 92px;
+    margin-bottom: var(--largeSpacing);
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+
+.reglerOgVilkar div{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+#reglerOgvilkarPage main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.reglerOgVilkar h2{
+    color: var(--brownText);
+    margin-bottom: var(--largeSpacing);
+    font-weight: 600;
+    font-size: 70px;
+}
+.reglerOgVilkar h3{
+    color: var(--brownText);
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.reglerOgVilkar p {
+    font-family: var(--p-fontFamily);
+    margin-bottom: var(--largeSpacing);
+    font-size: 27px;
+    line-height: 140%;
+
+}
+
+@media screen and (max-width: 768px) {
+    /* hero billede og text component mobil */
+    #reglerOgvilkarPage h1{
+        text-transform: uppercase;
+        font-size: 25px;
+        margin-bottom: var(--smallSpacing);
+        max-width: 85%;
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .reglerOgVilkar h2{
+        color: var(--brownText);
+        margin-bottom: var(--largeSpacing);
+        font-weight: 600;
+        font-size: 27px;
+    }
+    .reglerOgVilkar h3{
+        color: var(--brownText);
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    #reglerOgvilkarPage .heroBillede img{
+        margin-bottom: var(--largeSpacing);
+    }
+
+    .reglerOgVilkar p {
+        font-family: var(--p-fontFamily);
+        margin-bottom: var(--largeSpacing);
+        font-size: 1.3rem;
+        line-height: 140%;
+    }
+    .reglerOgVilkar div {
+        max-width: 85%;
+    }
+}
 
 /* Regler og vilkar slut */
 
@@ -448,6 +540,7 @@ input[type="submit"] {
 .footer {
   text-align: center;
   margin-bottom: var(--hugeSpacing);
+  margin-top: var(--hugeSpacing);
 }
 
 .footer svg{
@@ -467,10 +560,8 @@ input[type="submit"] {
     flex-direction: column;
     text-align: center;
     margin-bottom: var(--largeSpacing);
- /* max-width: 800px;
- margin: 0 auto;
- text-align: center; */
 }
+
 .footer div p{
   margin: 0 auto;
   font-family: var(--p-fontFamily);
@@ -482,6 +573,8 @@ input[type="submit"] {
     .footer {
    max-width: 800px;
    margin: 0 auto;
+   margin-top: var(--hugeSpacing);
+   margin-bottom: var(--hugeSpacing);
     }
     .footer div {
   display: flex;
@@ -493,9 +586,6 @@ input[type="submit"] {
     .footer div p{
  margin: 0;
     }
-
- 
-
 }
 
 /* footer slut */
