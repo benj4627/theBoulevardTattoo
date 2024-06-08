@@ -439,16 +439,17 @@ input[type="submit"] {
 /* Regler og vilkar start*/
 
 /* hero tekst og billede component styles start */
-#reglerOgvilkarPage header{
+header{
     max-width: 1440px;
     margin: 0 auto;
 }
-#reglerOgvilkarPage .heroBillede{
+
+.heroBillede{
     width: 100%;
     height: 60%; 
-    /* margin: 0 auto; */
 }
-#reglerOgvilkarPage .heroBillede img{
+
+.heroBillede img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -457,7 +458,7 @@ input[type="submit"] {
 
 
 
-#reglerOgvilkarPage h1{
+header h1{
     text-transform: uppercase;
     font-size: 92px;
     margin-bottom: var(--largeSpacing);
@@ -497,10 +498,10 @@ input[type="submit"] {
 
 @media screen and (max-width: 768px) {
     /* hero billede og text component mobil */
-    #reglerOgvilkarPage h1{
+    #header h1{
         text-transform: uppercase;
         font-size: 25px;
-        margin-bottom: var(--smallSpacing);
+        margin-bottom: var(--largeSpacing); 
         max-width: 85%;
         width: 1440px;
         margin: 0 auto;
@@ -518,9 +519,21 @@ input[type="submit"] {
         font-size: 25px;
     }
 
-    #reglerOgvilkarPage .heroBillede img{
-        margin-bottom: var(--largeSpacing);
+
+    
+    .heroBillede{
+        width: 100%;
+        height: 100%; 
     }
+    
+    .heroBillede img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: var(--largeSpacing);
+       
+    }
+    
  /* hero billede og text component mobil slut */
     .reglerOgVilkar p {
         font-family: var(--p-fontFamily);
@@ -546,29 +559,43 @@ input[type="submit"] {
    color: var(--brownText);
    text-align: right;
    margin-bottom: var(--smallSpacing);
+   margin-top: var(--largeSpacing);
 }
 #faq h2:last-of-type{
-   margin-top: 4rem;
+    margin-top: 4rem;
+}
+#faq h2:first-of-type{
+    text-align: left;
+    font-size:70px;
+    margin-top: 0;
 }
 #faq h3{
-   font-weight: 600;
+    font-weight: 600;
 }
 #faq p {
-   font-family: var(--p-fontFamily);
-   font-size: 27px;
-   line-height: 140%;
-   max-width: 70ch;
+    font-family: var(--p-fontFamily);
+    font-size: 27px;
+    line-height: 140%;
+    max-width: 70ch;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    #faq h3{
+       font-size: 1.3rem;
+    }
+    #faq p{
+       font-size: 1.3rem;
+    }
+    #faq h2:first-of-type{
+        text-align: left;
+        font-size:30px;
+    }
 }
 
 /* accordion styles */
 
-.singleBorder {
-    border-bottom: 3px solid var(--orangeMain);
-}
-.doubleBorder {
-    border-top: 3px solid var(--orangeMain);
-    border-bottom: 3px solid var(--orangeMain);
-}
 
 summary {
     padding-block: .5rem;
@@ -577,18 +604,26 @@ summary {
     justify-content: space-between;
     align-items: center;
     
-  }
-  summary:after{
+}
+summary:after{
     content: "\002B";
     font-size: 3rem;
     font-weight: 600;
     color: #DA5F25;
-  }
+    margin-left: 1rem;
+}
 
-  details[open] summary:after{
+details[open] summary:after{
     content: "\00D7";
-
-  }
+    
+}
+.singleBorder {
+    border-bottom: 3px solid var(--orangeMain);
+}
+.doubleBorder {
+    border-top: 3px solid var(--orangeMain);
+    border-bottom: 3px solid var(--orangeMain);
+}
 
 /* faq slut */
 
