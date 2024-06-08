@@ -537,19 +537,42 @@ input[type="submit"] {
 
 /* faq start */
 
+#faq {
+    width: 1000px;
+    margin: 0 auto;
+    max-width: 85%;
+}
+#faq h2{
+   color: var(--brownText);
+   text-align: right;
+   margin-bottom: var(--smallSpacing);
+}
+#faq h2:last-of-type{
+   margin-top: 4rem;
+}
+#faq h3{
+   font-weight: 600;
+}
+#faq p {
+   font-family: var(--p-fontFamily);
+   font-size: 27px;
+   line-height: 140%;
+   max-width: 70ch;
+}
 
 /* accordion styles */
 
-.vedtaegtContainerSingleBorder {
+.singleBorder {
     border-bottom: 3px solid var(--orangeMain);
 }
-.vedtaegtContainerDoubleBorder {
+.doubleBorder {
     border-top: 3px solid var(--orangeMain);
     border-bottom: 3px solid var(--orangeMain);
 }
 
 summary {
-    padding: .5rem 1.3rem;
+    padding-block: .5rem;
+    padding-right: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -558,6 +581,7 @@ summary {
   summary:after{
     content: "\002B";
     font-size: 3rem;
+    font-weight: 600;
     color: #DA5F25;
   }
 
