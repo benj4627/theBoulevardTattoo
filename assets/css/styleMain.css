@@ -521,7 +521,7 @@ input[type="submit"] {
     #reglerOgvilkarPage .heroBillede img{
         margin-bottom: var(--largeSpacing);
     }
-
+ /* hero billede og text component mobil slut */
     .reglerOgVilkar p {
         font-family: var(--p-fontFamily);
         margin-bottom: var(--largeSpacing);
@@ -534,6 +534,39 @@ input[type="submit"] {
 }
 
 /* Regler og vilkar slut */
+
+/* faq start */
+
+
+/* accordion styles */
+
+.vedtaegtContainerSingleBorder {
+    border-bottom: 3px solid var(--orangeMain);
+}
+.vedtaegtContainerDoubleBorder {
+    border-top: 3px solid var(--orangeMain);
+    border-bottom: 3px solid var(--orangeMain);
+}
+
+summary {
+    padding: .5rem 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  summary:after{
+    content: "\002B";
+    font-size: 3rem;
+    color: #DA5F25;
+  }
+
+  details[open] summary:after{
+    content: "\00D7";
+
+  }
+
+/* faq slut */
 
 /* footer start */
 
