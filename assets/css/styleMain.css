@@ -770,4 +770,55 @@ h4 {
   }
 /* forside styling slut */
 
+
+/* stilguide start */
+/* stilguide intro */
+.stilGuideContentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    align-items: center;
+    gap: var(--largeSpacing);
+}
+
+.stilguideLokalNaveContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    place-items: center;
+}
+
+.introStilguide h2 {
+    color: var(--brownText);
+    font-weight: 700;
+    text-align: center;
+    margin-top: var(--largeSpacing);
+    margin-bottom: var(--largeSpacing);
+}
+
+.lokalNavBtn {
+    color: var(--orangeMain);
+    background-color: var(--baggrundBeige); 
+    border: 3.5px solid #DA5F25;
+    border-radius: var(--smallBorderRadius);
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    font-family: "proxima-nova-wide", sans-serif;
+    font-weight: 800;
+    transition: .3s ease-in-out;
+    min-width: 15vw;
+}
+
+.lokalNavBtn:hover {
+    color: var(--baggrundBeige);
+    background-color: var(--orangeMain);
+    transform: scale(107%);
+    border-radius: var(--largeBorderRadius);
+    cursor: pointer;
+}
+
+.stilguideLokalNaveContainer a {
+    all: unset; 
+}
+
+/* stilguide slut */
+
 /* HUSK AT LAVE JAVASCRIPT SÅ TINGENE KOMMER FLVENDE IND FRA BUNDEN NÅR MAN SCROLLER!!! */
