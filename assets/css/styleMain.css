@@ -739,9 +739,46 @@ details[open] summary:after{
     width: 100%;
 }
 
-.hidden-link {
+.subMenu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    
+}
+/* 
+.hidden {
     display: none;
+} */
+
+.xPosition {
+    position: relative;
+}
+.xPosition span {
+    position: absolute;
+    left: 3px;
+    
 }
 
+.subMenu {
+   width: 280px;
+   height: 3000px;
+   position: absolute;
+   background-color: var(--baggrundBeige); 
+  padding-right: 30px;
+ right: 14rem; 
+
+}
+.subMenu i{
+   color: var(--orangeMain);
+   font-size: 2rem;
+   padding-left: 1rem;
+}
+
+.subMenuContainer {
+max-width: 1440px;
+margin: 0 auto;
+text-align: right;
+}
+ 
 
 /* Hamburger menu styles slut */
