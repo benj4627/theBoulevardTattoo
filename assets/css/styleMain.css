@@ -88,7 +88,7 @@ p {
     line-height: 1.6rem;
     color: var(--brownText);
     font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 img,
@@ -776,6 +776,9 @@ h4 {
 
 /* stilguide start */
 /* stilguide intro */
+.introStilguide {
+    padding-bottom: var(--hugeSpacing);
+}
 .stilGuideContentContainer {
     display: grid;
     grid-template-columns: repeat(2, minmax(160px, 1fr));
@@ -833,6 +836,12 @@ h4 {
 .whiteFullWidth {
     width: 100vw;
     background-color: var(--lysBaggrund);
+    padding: var(--hugeSpacing);
+}
+
+.fullWidthStil {
+    width: 100vw;
+    background-color: var(--baggrundBeige);
     padding: var(--hugeSpacing);
 }
   
