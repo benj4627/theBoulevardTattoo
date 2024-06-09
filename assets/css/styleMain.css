@@ -196,6 +196,7 @@ form {
 
 .tabTextContent p, h2 {
     color: var(--baggrundBeige);
+
 }
 
 .tabTextContent h2 {
@@ -1123,6 +1124,27 @@ text-align: right;
  
 
 /* Hamburger menu styles slut */
+
+/* trin for trin start */
+
+.intro p {
+margin: 0 auto;
+max-width: 65ch;
+margin-bottom: 3rem;
+font-family: "proxima-nova-wide", sans-serif;
+line-height: 140%;
+font-size: 1.5rem;
+font-weight: 300;
+}
+
+.tabTextContent h3 {
+color: #ffedcf;
+margin-bottom: var(--smallSpacing);
+}
+
+
+
+/* trin for trin slut */
 
 /* HUSK AT LAVE JAVASCRIPT SÅ TINGENE KOMMER FLVENDE IND FRA BUNDEN NÅR MAN SCROLLER!!! */
 
