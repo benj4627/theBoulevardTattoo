@@ -683,4 +683,65 @@ details[open] summary:after{
 /* footer slut */
 
 
+/* hamburger menu styles start */
+ .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--baggrundBeige);
+    z-index: 1000;
+} 
 
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.linkHamburgerFlex {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #FC8C58;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FC8C58;
+    transition: width .3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.hidden-link {
+    display: none;
+}
+
+
+/* Hamburger menu styles slut */
