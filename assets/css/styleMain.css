@@ -41,11 +41,12 @@ a {
     color: var(--orangeMain);
     font-weight: 700;
     transition: .2s ease-in-out;
+    font-family: "Cormorant Garamond", serif;
 }
 
 a:hover {
     font-weight: 1000;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     color: var(--lightOrange);
 }
 
@@ -86,6 +87,8 @@ p {
     margin-bottom: 2rem;
     line-height: 1.6rem;
     color: var(--brownText);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
 }
 
 img,
@@ -782,7 +785,7 @@ h4 {
 
 .stilguideLokalNaveContainer {
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
     place-items: center;
 }
 
@@ -804,7 +807,7 @@ h4 {
     font-family: "proxima-nova-wide", sans-serif;
     font-weight: 800;
     transition: .3s ease-in-out;
-    min-width: 15vw;
+    width: 250px;
 }
 
 .lokalNavBtn:hover {
@@ -819,6 +822,65 @@ h4 {
     all: unset; 
 }
 
+/* stilGuide stil section start*/
+.stilGuideContentContainerWhite {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: var(--smallSpacing);
+    align-items: start;
+}
+
+.whiteFullWidth {
+    width: 100vw;
+    background-color: var(--lysBaggrund);
+    padding: var(--hugeSpacing);
+}
+  
+.stilGuideImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--smallSpacing);
+    width: 100%;
+}
+  
+.stilGuideImages img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--smallBorderRadius);
+}
+  
+.stilGuidePageTextContent {
+    display: flex;
+    gap: var(--smallSpacing);
+    align-items: flex-start;
+  }
+  
+.specificStilText, 
+  .linkTilKunsterStilguide {
+    flex: 1;
+}
+
+.linkKunsterUL li {
+    list-style-type: none;
+    font-size: 1.8rem;
+    font-family:  "proxima-nova-wide", sans-serif;
+    margin: 2rem 0;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+}
+
+.linkKunsterUL li:hover {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.stilGuideContentContainerWhite h3 {
+    margin-bottom: var(--largeSpacing);
+    font-size: 2rem;
+}
+/* sTilguide stil section slut */
 /* stilguide slut */
 
 /* HUSK AT LAVE JAVASCRIPT SÅ TINGENE KOMMER FLVENDE IND FRA BUNDEN NÅR MAN SCROLLER!!! */
