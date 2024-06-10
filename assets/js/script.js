@@ -30,3 +30,12 @@ notificationsEl.classList.toggle("subMenuOpen");
 });
 
 // hamburger menu js slut
+
+//chat funktion
+
+const chatIconEl = document.querySelector("#contactIcon");
+const contactFormEl = document.querySelector(".contactFormSticky");
+
+chatIconEl.addEventListener("click", () => {
+    contactFormEl.classList.toggle("contactFormActive");
+});

@@ -1346,12 +1346,80 @@ margin-bottom: var(--smallSpacing);
 
 /* kontakt knap sticky */
 .contactFunktionContainer {
-    width: 15vw;
-    height: fit-content;
-    background-color: var(--lysBaggrund);
-    border-radius: var(--smallBorderRadius);
+    width: 350px;
+    position: relative;
+}
+
+.contactFunktionContainer i {
+    color: var(--orangeMain);
+    font-size: 3rem;
+    position: fixed; 
+    right: 20px; 
+    bottom: 20px;
+    cursor: pointer; 
+    z-index: 1000;
+    transition: .3s ease-in-out;
+}
+
+.contactFunktionContainer i:hover {
+    color: var(--lightOrange);
+    transform: scale(120%);
+}
+
+.contactFormSticky {
+    background-color: var(--baggrundBeige);
+    padding: var(--largeSpacing);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.59);
+    border-radius: var(--largeBorderRadius);
+    position: fixed; 
+    right: 50px; 
+    bottom: 50px;
+    cursor: pointer; 
+    z-index: 1001;
+    transition: .3s ease-in-out;
+    opacity: 0;
+}
+
+.contactFormActive {
+    opacity: 1;
 }
 
 .contactFormSticky label {
+    font-family: "proxima-nova-wide", sans-serif;
+    font-weight: 400;
+}
+
+.contactFormSticky label:first-of-type {
+    padding-top: var(--smallSpacing);
+}
+
+.contactFormSticky input {
+    padding: .5rem 1rem;
     background-color: var(--lysBaggrund);
+    border: 1.5px solid var(--orangeMain);
+    width: 100%;
+    border-radius: var(--smallBorderRadius);
+}
+
+.contactFormSticky textarea {
+    padding: .5rem 1rem;
+    background-color: var(--lysBaggrund);
+    border: unset;
+    border-radius: var(--smallBorderRadius);
+    font-family: var(--p-fontFamily);
+    border: 1.5px solid var(--orangeMain);
+}
+
+.contactFormSticky input[type="submit"] {
+    background-color: var(--baggrundBeige);
+    border: 3.5px solid #DA5F25;
+    margin-top: var(--largeSpacing);
+    margin-bottom: var(--smallSpacing);
+}
+
+.contactFormSticky input[type="submit"]:hover {
+    color: var(--baggrundBeige);
+    background-color: var(--orangeMain);
+    transform: scale(107%);
+    border-radius: var(--largeBorderRadius);
 }

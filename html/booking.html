@@ -11,8 +11,8 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/LogoBrun.png" />
     <link rel="stylesheet" href="./assets/css/style.min.css" />
     <link rel="stylesheet" href="../assets/css/styleMain.css" />
-    <script src="./assets/js/script.js" defer></script>
     <script src="../assets/js/booking.js" defer></script>
+    <script src="../assets/js/script.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -23,7 +23,10 @@
   </head>
 
   <body>
-    <header id="bookingHeaderContainer" class="bookingHeaderContainer contentContainer">
+    <header
+      id="bookingHeaderContainer"
+      class="bookingHeaderContainer contentContainer"
+    >
       <h1>BOOKING</h1>
       <p class="headerTextBooking">
         Uanset om du er ude efter et nyt kunstværk eller vil opfriske din
@@ -156,42 +159,39 @@
         </div>
       </a>
     </main>
-
     <div class="contactFunktionContainer">
-    <form class="contactFormSticky">
-      <label for="name">Hvad er dit navn?</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        required
-        placeholder="Fulde navn"
-      />
-    
-      <label for="email">Hvad er din email? </label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        placeholder="email@eksempel.dk"
-      />
-    
-      <label for="comments">Skriv en besked</label>
-      <textarea
-        id="comments"
-        name="comments"
-        rows="4"
-        cols="0"
-        placeholder="Hvad kan vi hjælpe dig med?"
-      ></textarea>
-      <input type="submit" value="SEND BESKED" />
-    </form>
-  </div>
+      <i id="#contactIcon" class="fa-solid fa-message"></i>
+      <form class="contactFormSticky">
+        <label for="name">Hvad er dit navn?</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Fulde navn"
+        />
+
+        <label for="email">Hvad er din email? </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="email@eksempel.dk"
+        />
+
+        <label for="comments">Skriv en besked</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          cols="0"
+          placeholder="Hvad kan vi hjælpe dig med?"
+        ></textarea>
+        <input type="submit" value="SEND BESKED" />
+      </form>
+    </div>
 
     <footer></footer>
   </body>
 </html>
-
-
-
