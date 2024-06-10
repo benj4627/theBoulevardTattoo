@@ -1221,7 +1221,7 @@ details[open] summary:after{
     top: 0;
     width: 100%;
     background-color: var(--baggrundBeige);
-    z-index: 1000;
+    z-index: 2;
 } 
 
 .navbar-container {
