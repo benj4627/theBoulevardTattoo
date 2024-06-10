@@ -1,3 +1,4 @@
+
 //fanger de relevante HTML elementer
 let visibleAnimEl = document.querySelectorAll(".slideinAnim");
 //Sætter en værdi for hvor langt man scroller før function aktiverer. 
@@ -17,3 +18,8 @@ function toggleClassScroll() {
 };
 //kalder function når siden loader, for at tjekke scroll position
 toggleClassScroll();
+
+// hamburger menu js start 
+
+
+// hamburger menu js slut
