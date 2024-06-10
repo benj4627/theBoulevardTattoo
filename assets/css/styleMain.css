@@ -43,11 +43,12 @@ a {
     color: var(--orangeMain);
     font-weight: 700;
     transition: .2s ease-in-out;
+    font-family: "Cormorant Garamond", serif;
 }
 
 a:hover {
     font-weight: 1000;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     color: var(--lightOrange);
 }
 
@@ -88,6 +89,8 @@ p {
     margin-bottom: 2rem;
     line-height: 1.6rem;
     color: var(--brownText);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
 }
 
 img,
@@ -518,6 +521,18 @@ h4 {
     border-bottom: var(--largeBorderRadius);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.59)
 }
+
+.slideinAnim {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateY(100%); 
+}
+  
+  .animationVisible {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+
 /* cards kunstnere slut */
 
 /* galleri sektion start */
@@ -714,11 +729,13 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: .2s ease-in-out;
 }
 
 .returnToTop i {
     color: var(--orangeMain);
     font-size: 1.5rem;
+    transition: .2s ease-in-out;
 }
 
 .returnToTop p {
@@ -726,6 +743,11 @@ h4 {
     font-size: .9rem;
     font-weight: 700;
     color: var(--orangeMain);
+}
+
+.returnToTop i:hover {
+    transform: scale(140%);
+    color: var(--lightOrange);
 }
 /* blog entry slut */
 
@@ -772,6 +794,164 @@ h4 {
     }
   }
 /* forside styling slut */
+
+
+
+/* stilguide start */
+/* stilguide intro */
+.introStilguide {
+    padding-bottom: var(--hugeSpacing);
+}
+.stilGuideContentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    align-items: center;
+    gap: var(--largeSpacing);
+}
+
+.stilguideLokalNaveContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    place-items: center;
+}
+
+.introStilguide h2 {
+    color: var(--brownText);
+    font-weight: 700;
+    text-align: center;
+    margin-top: var(--largeSpacing);
+    margin-bottom: var(--largeSpacing);
+}
+
+.lokalNavBtn {
+    color: var(--orangeMain);
+    background-color: var(--baggrundBeige); 
+    border: 3.5px solid #DA5F25;
+    border-radius: var(--smallBorderRadius);
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    font-family: "proxima-nova-wide", sans-serif;
+    font-weight: 800;
+    transition: .3s ease-in-out;
+    width: 250px;
+}
+
+.lokalNavBtn:hover {
+    color: var(--baggrundBeige);
+    background-color: var(--orangeMain);
+    transform: scale(107%);
+    border-radius: var(--largeBorderRadius);
+    cursor: pointer;
+}
+
+.stilguideLokalNaveContainer a {
+    all: unset; 
+}
+
+/* stilGuide stil section start*/
+.stilGuideContentContainerWhite {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: var(--smallSpacing);
+    align-items: start;
+}
+
+.whiteFullWidth {
+    width: 100vw;
+    background-color: var(--lysBaggrund);
+    padding: var(--hugeSpacing);
+}
+
+.fullWidthStil {
+    width: 100vw;
+    background-color: var(--baggrundBeige);
+    padding: var(--hugeSpacing);
+}
+  
+.stilGuideImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--smallSpacing);
+    width: 100%;
+}
+  
+.stilGuideImages img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--smallBorderRadius);
+}
+  
+.stilGuidePageTextContent {
+    display: flex;
+    gap: var(--smallSpacing);
+    align-items: flex-start;
+  }
+  
+.specificStilText, 
+  .linkTilKunsterStilguide {
+    flex: 1;
+}
+
+.linkKunsterUL li {
+    list-style-type: none;
+    font-size: 1.8rem;
+    font-family:  "proxima-nova-wide", sans-serif;
+    margin: 2rem 0;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+}
+
+.linkKunsterUL li:hover {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.stilGuideContentContainerWhite h3 {
+    margin-bottom: var(--largeSpacing);
+    font-size: 2rem;
+}
+/* sTilguide stil section slut */
+
+/* media queries stilguide */
+@media screen and (max-width: 768px) {
+    .stilGuideContentContainer {
+      grid-template-columns: 1fr;
+    }
+
+    .introStilguide {
+        margin: 0 10%;
+        padding-bottom: var(--largeSpacing);
+    }
+
+    .fullWidthStil,
+    .whiteFullWidth {
+        padding: var(--largeSpacing);
+    }
+  
+    .stilGuidePageTextContent {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .stilguideLokalNaveContainer {
+        grid-template-columns: repeat(1 , minmax(160px, 1fr));
+    }
+
+  
+    .stilGuideImages {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .specificStilText, 
+    .linkTilKunsterStilguide {
+      width: 100%;
+    }
+  }
+/* stilguide slut */
+
 
 /* booking slut */
 
@@ -1147,4 +1327,5 @@ margin-bottom: var(--smallSpacing);
 /* trin for trin slut */
 
 /* HUSK AT LAVE JAVASCRIPT SÅ TINGENE KOMMER FLVENDE IND FRA BUNDEN NÅR MAN SCROLLER!!! */
+
 
