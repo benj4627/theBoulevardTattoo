@@ -110,7 +110,7 @@ form {
 
 /* utility classes */
 .contentContainer {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -1172,7 +1172,9 @@ details[open] summary:after{
 .footer div{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-content: left;
+    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: var(--largeSpacing);
 }
 
@@ -1184,22 +1186,30 @@ details[open] summary:after{
 }
 
 @media screen and (min-width: 768px) {
-    .footer {
-   max-width: 800px;
-   margin: 0 auto;
-   margin-top: var(--hugeSpacing);
-   margin-bottom: var(--hugeSpacing);
+    .footerContainer {
+        display: flex;
+        justify-content: center; /* Center the container horizontally */
+        max-width: 800px; /* Set a max-width for the container */
+        margin: 0 auto; /* Center the container horizontally */
     }
-    .footer div {
-  display: flex;
-  flex-direction: row;
- gap: 2rem;
-
- margin: auto;
+    
+    .footerContainer > div {
+        display: flex; /* Display as inline flex */
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 1rem; 
     }
-    .footer div p{
- margin: 0;
+    
+    .footerContainer > div i {
+        width: 24px; /* Set a fixed width for the icons */
     }
+    
+    .footerContainer > div p {
+        margin: 0; /* Remove default margin from paragraphs */
+    }
+    
+    
+    
 }
 
 /* footer slut */

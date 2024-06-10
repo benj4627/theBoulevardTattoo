@@ -39,7 +39,7 @@ let tabContent = [
     <div class="tabTextContent">
         <h2>HYGIEJNE</h2>
         <p>Vi har alle fuldført og bestået det påkrævede hygiejnekursus fra Sikkerhedsstyrelsen, og det betyder at vi ved lige præcis hvad vi skal gøre, for at passe så godt på dig og din hud som muligt i forbindelse med en tatovering.</p>
-        <p>Derudover er både butikken og alle tatovører godkendt og registreret hos Sikkerhedsstyrelse. De kommer uanmeldt i ny og næ, og sikrer sig at vi lever op til de krav vi bliver stillet både med rengøring, klargøringsprocedure, opsætning af arbejdsstation, opbevaring af udstyr, farver og alt andet man kunne forestille sig. På <a href="https://www.sik.dk/tattooregister" target="_blank">Sikkerhedsstyrelsens hjemmmeside</a>, kan du selv gå ind og tjekke om din tatovør er godkendt og registreret. Hvis du har spørgsmål kan du altid kigge i vores <a href="./faq">FAQ</a> eller skrive til os via vores kontaktformular som du finder ude til højre.</p>
+        <p>Derudover er både butikken og alle tatovører godkendt og registreret hos Sikkerhedsstyrelse. De kommer uanmeldt i ny og næ, og sikrer sig at vi lever op til de krav vi bliver stillet både med rengøring, klargøringsprocedure, opsætning af arbejdsstation, opbevaring af udstyr, farver og alt andet man kunne forestille sig. På <a href="https://www.sik.dk/tattooregister" target="_blank">Sikkerhedsstyrelsens hjemmmeside</a>, kan du selv gå ind og tjekke om din tatovør er godkendt og registreret. Hvis du har spørgsmål kan du altid kigge i vores <a href="./faq.html">FAQ</a> eller skrive til os via vores kontaktformular som du finder ude til højre.</p>
     </div>
     <div class="tabImg">
         <img src="../assets/images/hygiejne.jpg" alt="Billede af steril arbejdsstation">
