@@ -518,6 +518,18 @@ h4 {
     border-bottom: var(--largeBorderRadius);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.59)
 }
+
+.slideinAnim {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateY(100%); 
+}
+  
+  .animationVisible {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+
 /* cards kunstnere slut */
 
 /* galleri sektion start */
