@@ -409,12 +409,12 @@ input[type="submit"] {
 
 /* media queries */
 @media screen and (max-width: 768px) {
-    .bookingHeaderContainer {
+    #bookingHeaderContainer {
         margin: 0 5%;
     }
 
-    .bookingHeaderContainer h1 {
-        margin: unset;
+    #bookingHeaderContainer h1 {
+        font-size: 25px;
     }
 
     .bookingFormContainer {
