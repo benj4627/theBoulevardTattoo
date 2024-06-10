@@ -714,11 +714,13 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: .2s ease-in-out;
 }
 
 .returnToTop i {
     color: var(--orangeMain);
     font-size: 1.5rem;
+    transition: .2s ease-in-out;
 }
 
 .returnToTop p {
@@ -726,6 +728,11 @@ h4 {
     font-size: .9rem;
     font-weight: 700;
     color: var(--orangeMain);
+}
+
+.returnToTop i:hover {
+    transform: scale(140%);
+    color: var(--lightOrange);
 }
 /* blog entry slut */
 
