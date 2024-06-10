@@ -1277,10 +1277,7 @@ details[open] summary:after{
     text-align: right;
     
 }
-/* 
-.hidden {
-    display: none;
-} */
+
 
 .xPosition {
     position: relative;
@@ -1291,27 +1288,36 @@ details[open] summary:after{
     
 }
 
-.subMenu {
-   width: 280px;
-   height: 3000px;
-   position: absolute;
-   background-color: var(--baggrundBeige); 
-  padding-right: 30px;
- right: 14rem; 
-
-}
-.subMenu i{
-   color: var(--orangeMain);
-   font-size: 2rem;
-   padding-left: 1rem;
-}
-
 .subMenuContainer {
-max-width: 1440px;
-margin: 0 auto;
-text-align: right;
+    width: 1440px;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
 }
- 
+
+.subMenu {
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: var(--baggrundBeige);
+    padding-right: 30px;
+    right: -100%; 
+    width: 280px; 
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+
+.subMenu i {
+    color: var(--orangeMain);
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.subMenuOpen {
+    position: fixed;
+    right: 0%; 
+    opacity: 1;
+}
 
 /* Hamburger menu styles slut */
 

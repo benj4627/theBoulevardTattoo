@@ -20,6 +20,13 @@ function toggleClassScroll() {
 toggleClassScroll();
 
 // hamburger menu js start 
+ 
+const burgerIcon = document.querySelector(".burgerMenuIcon");
+const notificationsEl = document.querySelector(".subMenu");
 
+
+burgerIcon.addEventListener("click", () => {
+notificationsEl.classList.toggle("subMenuOpen");
+});
 
 // hamburger menu js slut
