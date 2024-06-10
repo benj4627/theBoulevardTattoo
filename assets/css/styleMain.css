@@ -897,6 +897,43 @@ h4 {
     font-size: 2rem;
 }
 /* sTilguide stil section slut */
+
+/* media queries stilguide */
+@media screen and (max-width: 768px) {
+    .stilGuideContentContainer {
+      grid-template-columns: 1fr;
+    }
+
+    .introStilguide {
+        margin: 0 10%;
+        padding-bottom: var(--largeSpacing);
+    }
+
+    .fullWidthStil,
+    .whiteFullWidth {
+        padding: var(--largeSpacing);
+    }
+  
+    .stilGuidePageTextContent {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .stilguideLokalNaveContainer {
+        grid-template-columns: repeat(1 , minmax(160px, 1fr));
+    }
+
+  
+    .stilGuideImages {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .specificStilText, 
+    .linkTilKunsterStilguide {
+      width: 100%;
+    }
+  }
 /* stilguide slut */
 
 /* HUSK AT LAVE JAVASCRIPT SÅ TINGENE KOMMER FLVENDE IND FRA BUNDEN NÅR MAN SCROLLER!!! */
