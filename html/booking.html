@@ -28,7 +28,7 @@
       class="bookingHeaderContainer contentContainer"
     >
       <h1>BOOKING</h1>
-      <p class="headerTextBooking">
+      <p id="headerTextBooking">
         Uanset om du er ude efter et nyt kunstværk eller vil opfriske din
         eksisterende tatovering er du kommet til det rette sted. Udfyld formen
         herunder for at komme i gang med bookingprocessen. Vi vender altid
@@ -159,9 +159,11 @@
         </div>
       </a>
     </main>
+    
     <div class="contactFunktionContainer">
-      <i id="#contactIcon" class="fa-solid fa-message"></i>
+      <div class="contactIcon"><i id="contactIcon" class="fa-solid fa-message"></i></div>
       <form class="contactFormSticky">
+        <i  id="contactFormClose" class="fa-solid fa-x"></i>
         <label for="name">Hvad er dit navn?</label>
         <input
           type="text"

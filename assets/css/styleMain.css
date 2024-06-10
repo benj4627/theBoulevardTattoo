@@ -273,15 +273,13 @@ form {
 
 /* booking start */
 /* header */
-.bookingHeaderContainer h1 {
-    text-align: center;
-    margin: var(--smallSpacing);
+#bookingHeaderContainer h1 {
+    text-align: center; 
+    margin: 0 auto;
 }
 
-.bookingHeaderContainer p {
-    margin: 1rem auto;
-    max-width: 64ch;
-    padding-bottom: var(--largeSpacing);
+#bookingHeaderContainer p {
+    margin: 0 auto;
 }
 /* header slut */
 /* booking form start */
@@ -1337,12 +1335,8 @@ font-weight: 300;
 color: #ffedcf;
 margin-bottom: var(--smallSpacing);
 }
-
-
-
 /* trin for trin slut */
 
-/* HUSK AT LAVE JAVASCRIPT SÅ TINGENE KOMMER FLVENDE IND FRA BUNDEN NÅR MAN SCROLLER!!! */
 
 /* kontakt knap sticky */
 .contactFunktionContainer {
@@ -1366,6 +1360,18 @@ margin-bottom: var(--smallSpacing);
     transform: scale(120%);
 }
 
+.contactFormSticky i:first-of-type {
+    position: absolute;
+    top: 15px;
+    right: 10;
+    font-size: 1.5rem;
+}
+
+.contactFormSticky i:first-of-type:hover{
+    transform: unset;
+}
+
+
 .contactFormSticky {
     background-color: var(--baggrundBeige);
     padding: var(--largeSpacing);
@@ -1375,7 +1381,7 @@ margin-bottom: var(--smallSpacing);
     right: 50px; 
     bottom: 50px;
     cursor: pointer; 
-    z-index: 1001;
+    z-index: 1002;
     transition: .3s ease-in-out;
     opacity: 0;
 }
