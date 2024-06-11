@@ -23,7 +23,6 @@ function renderPost(post) {
   const om_personen = post.acf.om_personen;
   const erfaring = post.acf.erfaring;
   const instagram = post.acf.instagram;
-  const kunsterBillede = post.acf.kunstnere_billede5;
 
   instaIkonEl.innerHTML = `
   <a href="https://www.instagram.com/ben.nielsenn" target="_blank">

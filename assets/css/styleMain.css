@@ -1360,7 +1360,7 @@ margin-bottom: var(--smallSpacing);
 
 /* kontakt knap sticky */
 .contactFunktionContainer {
-    width: 350px;
+    width: 0;
     position: relative;
 }
 
@@ -1408,6 +1408,7 @@ margin-bottom: var(--smallSpacing);
 
 .contactFormActive {
     opacity: 1;
+    width: 350px;
 }
 
 .contactFormSticky label {
@@ -1611,6 +1612,13 @@ line-height: 130%;
     width: 85%;
     margin: 0 auto;
 }
+
+.galleriKunsterGridContainer > div > img {
+
+    aspect-ratio: 1;
+    border-radius: var(--smallBorderRadius);
+}
+
 /* galleri slut */
 .arrowsContainer  {
     display: flex;
