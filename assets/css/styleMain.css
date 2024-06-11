@@ -1445,8 +1445,9 @@ margin-bottom: var(--smallSpacing);
     margin: unset;
 }
 .EnkeltkunsterContainer{
-    height: 90vh;
+    max-height: 90vh;
     width: 100%;
+    margin-bottom: var(--hugeSpacing);
 }
 .EnkeltkunsterContentContainer {
     display: flex;
@@ -1464,11 +1465,32 @@ margin-bottom: var(--smallSpacing);
 .kunsterProfileImg img {
     height: 100%;
     width: auto;
+    border-radius: var(--smallBorderRadius);
 }
 
 .kunsterTextAbout p {
     max-width: 80ch;
     padding-bottom: var(--smallSpacing);
+}
+
+.instaIcon a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.instaIcon i {
+    font-size: 40px;
+    margin-right: var(--smallSpacing);
+    vertical-align: middle; 
+}
+
+/* specific kunster galleri */
+.galleriKunsterGridContainer {
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(4, minmax(160px, 1fr));
+    align-items: center;
 }
 
 /* specifik kunster slut */
