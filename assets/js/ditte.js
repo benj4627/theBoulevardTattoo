@@ -25,7 +25,7 @@ function renderPost(post) {
   const instagram = post.acf.instagram;
 
   instaIkonEl.innerHTML = `
-  <a href="https://www.instagram.com/ben.nielsenn" target="_blank">
+  <a href="https://www.instagram.com/ditteharboe/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
                 <h3>${instagram}</h3>
               </a>
