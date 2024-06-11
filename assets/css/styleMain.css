@@ -1072,6 +1072,9 @@ header h1{
 /* Regler og vilkar slut */
 
 /* faq start */
+.displayNone {
+    display: none;
+}
 
 #faq {
     width: 1000px;
@@ -1115,6 +1118,19 @@ header h1{
         text-align: left;
         font-size:30px;
     }
+}
+
+@media screen and (max-width: 1208px) {
+    .desktopNav {
+        display: none;
+    }
+
+
+    .mobilNav {
+        display: block;
+    }
+
+
 }
 
 /* accordion styles */
@@ -1229,7 +1245,7 @@ details[open] summary:after{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 0px;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -1288,14 +1304,6 @@ details[open] summary:after{
     
 }
 
-.subMenuContainer {
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: right;
-    position: relative;
-    overflow: hidden;
-}
-
 .subMenu {
     opacity: 0;
     position: absolute;
@@ -1316,6 +1324,17 @@ details[open] summary:after{
     position: fixed;
     right: 0%; 
     opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.subMenuMobil {
+    opacity: 0;
+    position: absolute;
+    background-color: var(--baggrundBeige);
+    padding-right: 30px; 
+    width: 280px; 
+    height: 100%;
+    transition: .3s ease-in-out;
 }
 
 /* Hamburger menu styles slut */

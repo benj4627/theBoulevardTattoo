@@ -1,10 +1,11 @@
 //Fanger de relevante HTML elementer 
 const chatIconEl = document.querySelector("#contactIcon");
 const contactFormEl = document.querySelector(".contactFormSticky");
+const crossMenuIcon = document.querySelector('.closeMenuIcon')
 const burgerIcon = document.querySelector(".burgerMenuIcon");
 const notificationsEl = document.querySelector(".subMenu");
 const crossContactEl = document.querySelector("#contactFormClose"); 
-// const urlBase = 'https://theboulevardtattoo.xn--dittebrgesen-0jb.dk/wp-json/wp/v2/';
+const burgerIconEl = document.querySelector(".burgerMenuIconMobil");
 
 //tilføjer en addeventListener click til vores chat ikon.
 //herefter tildeles contactFormActive class, som ændrer opacity fra 0-1 og derfor er kontaktformen synlig. 
@@ -20,8 +21,16 @@ crossContactEl.addEventListener("click", () => {
 
 // hamburger menu js start 
 burgerIcon.addEventListener("click", () => {
-notificationsEl.classList.toggle("subMenuOpen");
+  notificationsEl.classList.toggle("subMenuOpen");
 });
+
+burgerIconEl.addEventListener("click", () => {
+  notificationsEl.classList.toggle("subMenuOpen");
+});
+
+
+
+
 
 // hamburger menu js slut
 
