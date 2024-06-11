@@ -466,6 +466,8 @@ h4 {
     gap: var(--largeSpacing);
     padding-bottom: var(--hugeSpacing);
     padding-top: var(--largeSpacing);
+    margin: 0 auto;
+    width: 85%;
 }
 .kunsterCardContainer {
     width: 100%;
