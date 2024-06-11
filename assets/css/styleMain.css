@@ -1563,7 +1563,7 @@ line-height: 130%;
 }
 
 .kunsterProfileImg img {
-    height: 100%;
+    aspect-ratio: auto;
     width: auto;
     border-radius: var(--smallBorderRadius);
 }
