@@ -359,13 +359,13 @@ input[type="submit"] {
 /* spørgsmål sektion */
 .questionsContainer {
     background-color: var(--lysBaggrund);
-    padding: 3rem 0;
+    padding: 4rem 0;
     margin-bottom: var(--hugeSpacing);
 }
 
 .questionsContent {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -1429,3 +1429,46 @@ margin-bottom: var(--smallSpacing);
     transform: scale(107%);
     border-radius: var(--largeBorderRadius);
 }
+
+/* kontaktform slut */
+
+/* Kunstnere start */
+.headerTextKunstnere {
+    margin-bottom: var(--hugeSpacing);
+    margin-top: unset;
+}
+/* Kunstnere slut */
+
+/* specific kunster start*/
+/* Kunster Content styling */
+#benHeaderContainer h1{
+    margin: unset;
+}
+.EnkeltkunsterContainer{
+    height: 90vh;
+    width: 100%;
+}
+.EnkeltkunsterContentContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: top;
+    gap: var(--hugeSpacing);
+    height: 100%;
+}
+
+.kunsterProfileImg {
+    max-height: 700px;
+    width: auto;
+}
+
+.kunsterProfileImg img {
+    height: 100%;
+    width: auto;
+}
+
+.kunsterTextAbout p {
+    max-width: 80ch;
+    padding-bottom: var(--smallSpacing);
+}
+
+/* specifik kunster slut */
