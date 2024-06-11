@@ -1276,7 +1276,6 @@ details[open] summary:after{
     display: flex;
     flex-direction: column;
     text-align: right;
-    
 }
 
 
@@ -1290,19 +1289,18 @@ details[open] summary:after{
 }
 
 .subMenuContainer {
-    width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: right;
     position: relative;
+    overflow: hidden;
 }
 
 .subMenu {
     opacity: 0;
-    overflow: hidden;
     position: absolute;
     background-color: var(--baggrundBeige);
-    padding-right: 30px;
-    right: -100%; 
+    padding-right: 30px; 
     width: 280px; 
     height: 100%;
     transition: .3s ease-in-out;
