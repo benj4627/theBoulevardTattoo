@@ -1615,7 +1615,6 @@ line-height: 130%;
 }
 
 .galleriKunsterGridContainer > div > img {
-
     aspect-ratio: 1;
     border-radius: var(--smallBorderRadius);
 }
@@ -1720,3 +1719,41 @@ line-height: 130%;
 }
 /* specifik kunster slut */
 
+
+/* shop start */
+.shopKategorier {
+    margin-top: var(--largeSpacing);
+    margin-bottom: var(--hugeSpacing);
+}
+
+.shopKategorier li {
+    margin-right: var(--largeSpacing);
+}
+
+/* shop cards */
+.shopCardsContainer {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.gridShopContainer {
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    align-items: center;
+}
+
+.cardContentShop img {
+    aspect-ratio: 1;
+    border-radius: var(--smallBorderRadius);
+}
+
+.cardShop {
+    transition: .3s ease-in-out;
+}
+
+.cardShop:hover {
+    transform: scale(102%);
+    border-bottom: var(--largeBorderRadius);
+}
+/* shop slut */
