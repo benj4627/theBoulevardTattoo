@@ -1,3 +1,33 @@
+baseUrl = 'https://theboulevardtattoo.xn--dittebrgesen-0jb.dk/wp-json/wp/v2/'
+
+function fetchKunster() {
+  fetch(baseUrl + 'posts'
+  )
+    .then(response => response.json())
+    .then(posts => {
+      console.log(posts);
+      renderPosts(posts);
+    })
+    .catch(error => {
+      console.error('Der opstod en fejl', error);
+    });
+}
+
+function renderPosts(posts) {
+const postsContainer = document.getElementById('posts-container');
+posts.forEach(post => {
+  const postElement = document.createElement('div');
+  postElement.classList.add('post');
+  postElement.innerHTML = `
+    <h2>${post.title.rendered}</h2>
+    <div>${post.acf.tekst_1}</div>
+    <div>${post.acf.tekst_2}</div>
+    <div>${post.acf.tekst_3}</div>
+  `;
+  postsContainer.appendChild(postElement);
+});
+}
+
 //Fanger de relevante HTML elementer 
 const chatIconEl = document.querySelector("#contactIcon");
 const contactFormEl = document.querySelector(".contactFormSticky");
