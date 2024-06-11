@@ -365,8 +365,9 @@ input[type="submit"] {
 
 .questionsContent {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: var(--hugeSpacing);
 }
 
 .questionsText h2 {
@@ -1442,11 +1443,13 @@ margin-bottom: var(--smallSpacing);
 /* specific kunster start*/
 /* Kunster Content styling */
 #benHeaderContainer h1{
-    margin: unset;
+    width: 85%;
+    margin: 0 auto;
 }
+
 .EnkeltkunsterContainer{
     max-height: 90vh;
-    width: 100%;
+    width: 85%;
     margin-bottom: var(--hugeSpacing);
 }
 .EnkeltkunsterContentContainer {
@@ -1455,6 +1458,7 @@ margin-bottom: var(--smallSpacing);
     align-items: top;
     gap: var(--hugeSpacing);
     height: 100%;
+    width: 85%;
 }
 
 .kunsterProfileImg {
@@ -1491,6 +1495,8 @@ margin-bottom: var(--smallSpacing);
     grid-gap: var(--largeSpacing);
     grid-template-columns: repeat(4, minmax(160px, 1fr));
     align-items: center;
+    width: 85%;
+    margin: 0 auto;
 }
 /* galleri slut */
 .arrowsContainer  {
@@ -1499,6 +1505,8 @@ margin-bottom: var(--smallSpacing);
     align-items: center;
     padding-bottom: 8rem; 
     transition: .3s ease-in-out;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .arrowsContainer i {
