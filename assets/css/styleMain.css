@@ -1492,5 +1492,31 @@ margin-bottom: var(--smallSpacing);
     grid-template-columns: repeat(4, minmax(160px, 1fr));
     align-items: center;
 }
+/* galleri slut */
+.arrowsContainer  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8rem; 
+    transition: .3s ease-in-out;
+}
+
+.arrowsContainer i {
+    font-size: 30px;
+    margin: 1rem .5rem;
+    vertical-align: middle; 
+}
+
+.arrowsContainer a {
+    font-family: "proxima-nova-wide", sans-serif;
+    font-size: 1.2rem;
+    transition: .3s ease-in-out;
+}
+
+.arrowsContainer a:hover {
+    transform: unset; 
+    font-size: 1.3rem;
+    font-weight: 700;
+}
 
 /* specifik kunster slut */
