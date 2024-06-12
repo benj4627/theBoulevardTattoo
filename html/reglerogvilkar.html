@@ -31,50 +31,95 @@
     <main>
       <section class="reglerOgVilkar">
         <div>
-        <h2>Vilkår for aflysning, <br>ombookning og betaling:</h2>
+          <h2>Vilkår for aflysning, <br />ombookning og betaling:</h2>
 
-        <h3>Giv Besked:</h3>
-        <p>
-          Giv os altid besked, hvis du bliver forsinket, ved at ringe til
-          butikken på 98113030.
-        </p>
+          <h3>Giv Besked:</h3>
+          <p>
+            Giv os altid besked, hvis du bliver forsinket, ved at ringe til
+            butikken på 98113030.
+          </p>
 
-        <h3>Forsinkelse:</h3>
-        <p>
-          Hvis du er mere end 30 minutter forsinket, skal du være opmærksom på,
-          at kunstneren måske ikke kan tatovere dig, og du mister dit depositum.
-        </p>
+          <h3>Forsinkelse:</h3>
+          <p>
+            Hvis du er mere end 30 minutter forsinket, skal du være opmærksom
+            på, at kunstneren måske ikke kan tatovere dig, og du mister dit
+            depositum.
+          </p>
 
-        <h3>Ændring af Aftale:</h3>
-        <p>
-          Du kan ændre din aftale op til to gange, så længe du giver os besked
-          senest dagen før i forvejen. Send venligst en e-mail med emnet
-          "ÆNDRING" eller "AFLYSNING" eller ring til os, så vi ikke overser det.
-        </p>
-        <h3>Aflysning:</h3>
-        <p>
-          Hvis du aflyser din aftale minimum 24 timer før den aftalte tid,
-          beholder du sit depositum. Hvis dette ikke overholdes skal du være
-          opmærksom på, at du mister dit depositum.  
-        </p>
-        <h3>Udeblivelse:</h3>
-        <p>
-          Hvis du ikke møder op og ikke giver besked, mister du dit depositum,
-          og det er op til kunstneren at beslutte, om du kan få en ny tid.  
-        </p>
-        <h3>Ledsagere:</h3>
-        <p>
-          Du er velkommen til at medbringe en god ven eller familiemedlem, men
-          hvis du vil have mere end en med så ring venligst for at informere os.
-           
-        </p>
-        <h3>Kæledyr og børn:</h3>
-        <p>
-          Af hensyn til de andre kunder i butikken, vil vi bede dig om ikke at
-          medbringe børn og kæledyr. Servicedyr er selvfølgelig velkomne.  
-        </p>
-    </div>
+          <h3>Ændring af Aftale:</h3>
+          <p>
+            Du kan ændre din aftale op til to gange, så længe du giver os besked
+            senest dagen før i forvejen. Send venligst en e-mail med emnet
+            "ÆNDRING" eller "AFLYSNING" eller ring til os, så vi ikke overser
+            det.
+          </p>
+          <h3>Aflysning:</h3>
+          <p>
+            Hvis du aflyser din aftale minimum 24 timer før den aftalte tid,
+            beholder du sit depositum. Hvis dette ikke overholdes skal du være
+            opmærksom på, at du mister dit depositum.  
+          </p>
+          <h3>Udeblivelse:</h3>
+          <p>
+            Hvis du ikke møder op og ikke giver besked, mister du dit depositum,
+            og det er op til kunstneren at beslutte, om du kan få en ny tid.  
+          </p>
+          <h3>Ledsagere:</h3>
+          <p>
+            Du er velkommen til at medbringe en god ven eller familiemedlem, men
+            hvis du vil have mere end en med så ring venligst for at informere
+            os.  
+          </p>
+          <h3>Kæledyr og børn:</h3>
+          <p>
+            Af hensyn til de andre kunder i butikken, vil vi bede dig om ikke at
+            medbringe børn og kæledyr. Servicedyr er selvfølgelig velkomne.  
+          </p>
+        </div>
       </section>
+
+      <a href="#reglerOgvilkarPage">
+        <div class="returnToTop">
+          <i class="fa-solid fa-arrow-up"></i>
+          <p>Rul til top</p>
+        </div>
+      </a>
+
+      <div class="contactFunktionContainer">
+        <div class="contactIcon">
+          <i id="contactIcon" class="fa-solid fa-message"></i>
+        </div>
+        <form class="contactFormSticky">
+          <i id="contactFormClose" class="fa-solid fa-x"></i>
+          <label for="name">Hvad er dit navn?</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Hans Hans"
+          />
+
+          <label for="email">Hvad er din email? </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="email@eksempel.dk"
+          />
+
+          <label for="comments">Skriv en besked</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            cols="0"
+            placeholder="Hvad kan vi hjælpe dig med?"
+          ></textarea>
+          <input type="submit" value="SEND BESKED" />
+        </form>
+      </div>
     </main>
 
     <footer>

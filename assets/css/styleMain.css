@@ -726,6 +726,7 @@ h4 {
 }
 
 .returnToTop {
+    margin-top: var(--hugeSpacing);
     display: flex;
     flex-direction: column;
     justify-content: center;
