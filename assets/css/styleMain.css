@@ -1638,7 +1638,8 @@ line-height: 130%;
 
 @media screen and (max-width: 1200px) {
     .blogindlæg {
-       display: block;
+       display: flex;
+       flex-direction: column;
     }
     
     .centerThis {
@@ -1780,7 +1781,8 @@ line-height: 130%;
     #benHeaderContainer,
     .instaIcon
     {
-        margin: 0 10%;
+        margin: 0 auto;
+        width: 100%;
     } 
 
     .instaIcon i {
@@ -1792,6 +1794,10 @@ line-height: 130%;
         vertical-align: middle;
     }
 
+    .questionsContent {
+        gap: unset;
+    }
+
     .EnkeltkunsterContainer {
         max-height: unset;
         margin-bottom: var(--smallSpacing);
@@ -1801,12 +1807,13 @@ line-height: 130%;
         flex-direction: column;
         align-items: center;
         padding: unset;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .kunsterProfileImg {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        height: 50vh;
         overflow: hidden;
     }
 
@@ -1886,4 +1893,20 @@ line-height: 130%;
     transform: scale(102%);
     border-bottom: var(--largeBorderRadius);
 }
+
+/* media queries shop */
+@media (max-width: 768px) {
+    .gridShopContainer {
+      grid-template-columns: 1fr; /* Single column */
+      grid-gap: 0; /* Remove gap between cards on mobile */
+    }
+  
+    .shopCardsContainer {
+      margin: 0 auto; /* Already set */
+      width: 85%; /* Maintain width */
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      flex-direction: column;
+    }
+  }
 /* shop slut */

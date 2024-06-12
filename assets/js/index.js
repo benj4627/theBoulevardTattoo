@@ -9,7 +9,7 @@ function toggleClassScroll() {
   window.addEventListener("scroll", function() {
     //Tjekker, om den aktuelle scroll position (window.scrollY) er større end  det tilladte scrollThreshold på 100
     if (window.scrollY > scrollThreshold) {
-      //Gennemgår HTML elementer isibleAnimEl og tilføjer klassen animationVisible. 
+      //Gennemgår HTML elementer visibleAnimEl og tilføjer klassen animationVisible. 
       visibleAnimEl.forEach(container => {
         container.classList.add("animationVisible");
       });

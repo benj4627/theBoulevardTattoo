@@ -5,7 +5,7 @@ let shopItems = document.querySelectorAll('.cardShop');
 document.querySelectorAll('.shopKategorier li a').forEach(link => {
     // Når man trykket på et link udføres funktionen filterProductsByCategory
     link.addEventListener('click', (event) => {
-        // fanger kategori-ID'en fra det klikkede link
+        //  fanger værdien, gemt i data-category-id for det klikkede kategori-filterlink, og tildeler den til variablen. categoryId bruges derefter til at identificere den valgte kategori og filtrere det rigtige blogindlæg.
         let categoryId = event.target.dataset.categoryId;
         // Kalder funktionen filterProductsByCategory med den valgte kategori-ID som argument og hermed filtreres der.
         filterProductsByCategory(categoryId);
@@ -19,9 +19,9 @@ function filterProductsByCategory(categoryId) {
         // Henter kategori-ID for det pågældende produkt
         let itemCategory = item.dataset.categoryId;
         // Hvis kategori ID matcher den valgte kategori eller hvis den valgte kategori er '0' (alle kategorier)
-        //ændre det til display block og vises
+        //ændre det til display flex og vises
         if (itemCategory === categoryId || categoryId === '0') {
-            item.style.display = 'block';
+            item.style.display = 'flex';
         } else {
             // Gemmer de andre produkter som ikke matcher kategori ID ved display:none; 
             item.style.display = 'none';
