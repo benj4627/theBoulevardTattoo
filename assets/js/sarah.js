@@ -26,7 +26,7 @@ function renderPost(post) {
   const kunsterBillede = post.acf.kunstnere_billede5;
 
   instaIkonEl.innerHTML = `
-  <a href="https://www.instagram.com/ben.nielsenn" target="_blank">
+  <a href="https://www.instagram.com/snikotattoo/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
                 <h3>${instagram}</h3>
               </a>
