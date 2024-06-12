@@ -23,7 +23,7 @@ let tabContent = [
             kyndige hænder hos os. Uanset om du drømmer om et fuldt sleeve
             eller en minimalistisk rose, står vores seks tatovører klar
             til at imødekomme dine ønsker. Vi dækker en bred vifte af
-            <a href="./stilguide">stilarter</a> og gør vores bedste for at
+            <a href="./stilguide.html">stilarter</a> og gør vores bedste for at
             sikre, at du får en tatovering, du bliver glad for.
         </p>
         <p>

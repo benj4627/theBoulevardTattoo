@@ -87,7 +87,7 @@ p {
     max-width: 45ch;
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    line-height: 1.6rem;
+    line-height: 140%;
     color: var(--brownText);
     font-family: "Cormorant Garamond", serif;
     font-weight: 600;
@@ -1360,7 +1360,7 @@ margin-bottom: var(--smallSpacing);
 
 /* kontakt knap sticky */
 .contactFunktionContainer {
-    width: 350px;
+    width: 0;
     position: relative;
 }
 
@@ -1401,13 +1401,15 @@ margin-bottom: var(--smallSpacing);
     right: 50px; 
     bottom: 50px;
     cursor: pointer; 
-    z-index: 1002;
+    z-index: -1;
     transition: .3s ease-in-out;
     opacity: 0;
 }
 
 .contactFormActive {
     opacity: 1;
+    width: 350px;
+    z-index: 1002;
 }
 
 .contactFormSticky label {
@@ -1611,6 +1613,12 @@ line-height: 130%;
     width: 85%;
     margin: 0 auto;
 }
+
+.galleriKunsterGridContainer > div > img {
+    aspect-ratio: 1;
+    border-radius: var(--smallBorderRadius);
+}
+
 /* galleri slut */
 .arrowsContainer  {
     display: flex;
@@ -1672,7 +1680,8 @@ line-height: 130%;
     }
 
     .kunsterProfileImg {
-        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
         height: 50vh;
         overflow: hidden;
     }
@@ -1708,6 +1717,49 @@ line-height: 130%;
     .contactIcon i {
         font-size: 30px;
     }
+
+    .heroH1 {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 /* specifik kunster slut */
 
+
+/* shop start */
+.shopKategorier {
+    margin-top: var(--largeSpacing);
+    margin-bottom: var(--hugeSpacing);
+}
+
+.shopKategorier li {
+    margin-right: var(--largeSpacing);
+}
+
+/* shop cards */
+.shopCardsContainer {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.gridShopContainer {
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    align-items: center;
+}
+
+.cardContentShop img {
+    aspect-ratio: 1;
+    border-radius: var(--smallBorderRadius);
+}
+
+.cardShop {
+    transition: .3s ease-in-out;
+}
+
+.cardShop:hover {
+    transform: scale(102%);
+    border-bottom: var(--largeBorderRadius);
+}
+/* shop slut */
