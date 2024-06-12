@@ -1186,6 +1186,14 @@ header h1{
         display: block;
     }
 
+    .navbar-container img,
+    .footer img {
+        max-width: 150px;
+    }
+
+    .footer img {
+        margin-bottom: var(--largeSpacing);
+    }
 
 }
 
@@ -1301,7 +1309,7 @@ details[open] summary:after{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px 20px;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -1344,7 +1352,8 @@ details[open] summary:after{
     width: 100%;
 }
 
-.subMenu ul {
+.subMenu ul,
+.subMenuMobil ul {
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -1362,12 +1371,30 @@ details[open] summary:after{
 
 .subMenu {
     opacity: 0;
-    position: absolute;
+    position: fixed;
     background-color: var(--baggrundBeige);
     padding-right: 30px; 
     width: 280px; 
+    right: 0%;
     height: 100%;
     transition: .3s ease-in-out;
+}
+
+.subMenuMobil {
+    opacity: 0;
+    position: fixed;
+    background-color: var(--baggrundBeige);
+    padding-right: 30px; 
+    width: 280px; 
+    right: 0%;
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+
+.subMenuMobil i {
+    color: var(--orangeMain);
+    font-size: 2rem;
+    padding-left: 1rem;
 }
 
 .subMenu i {
@@ -1380,16 +1407,6 @@ details[open] summary:after{
     position: fixed;
     right: 0%; 
     opacity: 1;
-    transition: .3s ease-in-out;
-}
-
-.subMenuMobil {
-    opacity: 0;
-    position: absolute;
-    background-color: var(--baggrundBeige);
-    padding-right: 30px; 
-    width: 280px; 
-    height: 100%;
     transition: .3s ease-in-out;
 }
 
