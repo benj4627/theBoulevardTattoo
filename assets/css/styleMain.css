@@ -1565,7 +1565,8 @@ line-height: 130%;
 
 @media screen and (max-width: 1200px) {
     .blogindlæg {
-       display: block;
+       display: flex;
+       flex-direction: column;
     }
     
     .centerThis {
@@ -1813,4 +1814,20 @@ line-height: 130%;
     transform: scale(102%);
     border-bottom: var(--largeBorderRadius);
 }
+
+/* media queries shop */
+@media (max-width: 768px) {
+    .gridShopContainer {
+      grid-template-columns: 1fr; /* Single column */
+      grid-gap: 0; /* Remove gap between cards on mobile */
+    }
+  
+    .shopCardsContainer {
+      margin: 0 auto; /* Already set */
+      width: 85%; /* Maintain width */
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      flex-direction: column;
+    }
+  }
 /* shop slut */
