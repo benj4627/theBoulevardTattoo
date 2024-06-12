@@ -236,6 +236,11 @@ form {
         margin-right: 10%; 
     }
 
+.intro p {
+    margin: 0 auto;
+    width: 85%;
+}
+
     .visionImg,
     .tabImg {
         max-width: 100%;
@@ -553,6 +558,8 @@ h4 {
     gap: var(--largeSpacing); 
 }
 
+
+
 .galleriGridContainer img {
     width: 100%;
     height: 100%;
@@ -604,6 +611,57 @@ h4 {
 .galleriImg8 {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+}
+
+
+@media (max-width: 767px) {
+    .galleriGridContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+    }
+    
+    .galleriImg1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .galleriImg2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .galleriImg3 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .galleriImg4 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .galleriImg5 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .galleriImg6 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .galleriImg7 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .galleriImg8 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    
 }
 /* galleri sektion slut */
 
@@ -777,10 +835,7 @@ h4 {
       grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
   
-    .galleriGridContainer {
-      grid-template-columns: repeat(1, minmax(100px, 1fr)); /* Change to 1 column */
-      grid-gap: var(--smallSpacing)
-    }
+   
 
     .reviewContainer {
         width: 90%;
@@ -1405,6 +1460,7 @@ margin-bottom: var(--smallSpacing);
     z-index: -1;
     transition: .3s ease-in-out;
     opacity: 0;
+    width: 350px;
 }
 
 .contactFormActive {
@@ -1453,6 +1509,15 @@ margin-bottom: var(--smallSpacing);
     border-radius: var(--largeBorderRadius);
 }
 
+@media screen and (max-width: 768px) {
+    .contactFormSticky {
+        
+        width: 85%;
+        right: 30px;
+        bottom:40px; 
+    }
+
+}
 
 /* Blog side start */
 
@@ -1510,14 +1575,22 @@ margin-bottom: var(--smallSpacing);
     padding: 3rem;
     margin-top: var(--largeSpacing);
 }
+
+
 .blogindlæg p {
    font-family: var(--p-fontFamily);
-   /* font-size: smaller; */
 }
 
-/* .blogindlæg iframe {
-   /* max-height: 200px; 
-/* }  */
+.blogindlæg.femGodeTattoo{
+   justify-content: center;
+   
+}
+.blogindlæg.femGodeTattoo p {
+   max-width: 65ch;
+
+}
+
+
 
 .tag {
     display: flex;
