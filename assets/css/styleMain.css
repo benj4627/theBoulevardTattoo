@@ -90,7 +90,7 @@ p {
     line-height: 140%;
     color: var(--brownText);
     font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 img,
@@ -1493,6 +1493,10 @@ margin-bottom: var(--smallSpacing);
 .blogKategorier li a:hover::after {
     width: 100%;
 }
+.blogKategorier div {
+    display: flex;
+    gap: 1rem;
+}
 
 .blogindlæg {
     display: flex;
@@ -1510,9 +1514,9 @@ margin-bottom: var(--smallSpacing);
    /* font-size: smaller; */
 }
 
-.blogindlæg iframe {
-   /* max-height: 200px; */
-}
+/* .blogindlæg iframe {
+   /* max-height: 200px; 
+/* }  */
 
 .tag {
     display: flex;
@@ -1532,6 +1536,7 @@ margin-bottom: var(--smallSpacing);
 .centerThis {
     margin: 0 auto;
     text-align: center; 
+    width: 65%;
 }
 
 .dato {
@@ -1542,6 +1547,51 @@ margin-bottom: var(--smallSpacing);
 .blogPostH2 {
 color: #3E302A;
 line-height: 130%;
+
+}
+
+.podcasts p {
+    margin-bottom: .8rem;
+    font-weight: 300;
+}
+
+.blogindlæg h3 {
+    font-family: var(--p-fontFamily);
+}
+.blogindlæg img {
+    border-radius: var(--smallBorderRadius);
+}
+
+@media screen and (max-width: 1200px) {
+    .blogindlæg {
+       display: block;
+    }
+    
+    .centerThis {
+       width: 100%;
+    }
+    
+    .blogKategorier {
+        display: block;
+    }
+    .blogKategorier div{
+        margin-bottom: var(--smallSpacing);
+    }
+    .blogKategorier:first-child{
+        margin-top: var(--largeSpacing);
+    }
+    iframe{
+         height: 100%;  
+    }
+    
+    .blogPostH2 {
+        font-size: 1.2rem;
+        
+        }
+
+        .blogindlæg p {
+            font-size: 16px;
+        }
 }
 
 /* Blog side slut */
