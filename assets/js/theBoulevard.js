@@ -27,7 +27,7 @@ let tabContent = [
             sikre, at du får en tatovering, du bliver glad for.
         </p>
         <p>
-            Udover vores <a href="./kunstenere">tatovører </a>består vores
+            Udover vores <a href="./kunstenere.html">tatovører </a>består vores
             fulde team af: Thomas (Manager) og Brian (ejer/stifter)
         </p>
     </div>
