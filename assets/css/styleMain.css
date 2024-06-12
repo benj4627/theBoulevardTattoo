@@ -87,7 +87,7 @@ p {
     max-width: 45ch;
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    line-height: 1.6rem;
+    line-height: 140%;
     color: var(--brownText);
     font-family: "Cormorant Garamond", serif;
     font-weight: 600;
@@ -1680,7 +1680,8 @@ line-height: 130%;
     }
 
     .kunsterProfileImg {
-        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
         height: 50vh;
         overflow: hidden;
     }
@@ -1715,6 +1716,11 @@ line-height: 130%;
 
     .contactIcon i {
         font-size: 30px;
+    }
+
+    .heroH1 {
+        font-size: 2rem;
+        text-align: center;
     }
 }
 /* specifik kunster slut */

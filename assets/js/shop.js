@@ -18,12 +18,12 @@ function filterProductsByCategory(categoryId) {
     shopItems.forEach(item => {
         // Henter kategori-ID for det pågældende produkt
         let itemCategory = item.dataset.categoryId;
-        // Hvis kategori matcher den valgte kategori eller hvis den valgte kategori er '0' (alle kategorier)
+        // Hvis kategori ID matcher den valgte kategori eller hvis den valgte kategori er '0' (alle kategorier)
         //ændre det til display block og vises
         if (itemCategory === categoryId || categoryId === '0') {
             item.style.display = 'block';
         } else {
-            // Gemmer de andre produktet ved display:none; 
+            // Gemmer de andre produkter som ikke matcher kategori ID ved display:none; 
             item.style.display = 'none';
         }
     });
