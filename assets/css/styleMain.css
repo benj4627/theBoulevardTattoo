@@ -1128,7 +1128,7 @@ header h1{
 /* Regler og vilkar slut */
 
 /* faq start */
-.displayNone {
+.f {
     display: none;
 }
 
@@ -1189,6 +1189,7 @@ header h1{
     .navbar-container img,
     .footer img {
         max-width: 150px;
+
     }
 
     .footer img {
@@ -1198,7 +1199,9 @@ header h1{
 }
 
 /* accordion styles */
-
+.footer img {
+    margin-bottom: var(--largeSpacing);
+}
 
 summary {
     padding-block: .5rem;
