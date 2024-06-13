@@ -18,3 +18,6 @@ function toggleClassScroll() {
 };
 //kalder function når siden loader, for at tjekke scroll position
 toggleClassScroll();
+
+
+
