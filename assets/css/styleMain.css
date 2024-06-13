@@ -1035,7 +1035,9 @@ header{
     margin-bottom: var(--hugeSpacing);
 }
 
-
+.displayNone {
+    display: none;
+}
 
 header h1{
     text-transform: uppercase;
