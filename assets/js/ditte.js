@@ -1,3 +1,4 @@
+//For kommentarer, se ben.js
 const baseUrl = 'https://theboulevardtattoo.xn--dittebrgesen-0jb.dk/wp-json/wp/v2/';
 
 function fetchKunsterID(id) {
