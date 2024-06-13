@@ -444,6 +444,87 @@ input[type="submit"] {
 
 /* forsiden styling start */
 
+
+
+
+.forsideVideoWrapper {
+    position: relative;
+    height: 80vh;
+    max-width: 1440px;
+    margin-top: var(--largeSpacing);
+    overflow: hidden;
+}
+video {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 60%;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+video {
+    z-index: -1;
+}
+
+.content h1 {
+    color: var(--lysBaggrund);
+    margin: 0;
+    font-size: 40px;
+  padding-top: 2rem;
+  font-family: "proxima-nova-wide", sans-serif; 
+  font-weight: 600;
+  text-align: left;
+  text-wrap: balance;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+}
+
+.content span {
+    color: var(--lysBaggrund);
+    margin: 0;
+    padding-top: 2rem;
+    font-family: "proxima-nova-wide", sans-serif; 
+    font-weight: 1000;
+    font-size: 40px;
+    font-style: italic;
+}
+
+@media (max-width: 1200px) {
+
+
+    .content h1 {
+
+        font-size: 20px;
+        top: 0px;
+    }
+    .content span {
+
+        font-size: 20px;
+    }
+
+    .forsideVideoWrapper {
+    object-fit: cover;
+    }
+
+    .forsideVideoWrapper {
+    position: relative;
+    height: 80vh;
+    max-width: 1440px;
+    margin-top: var(--largeSpacing);
+    overflow: hidden;
+}
+
+
+
+  }
+
+
+
 .introTextContainer {
     display: flex;
     justify-content: center;
