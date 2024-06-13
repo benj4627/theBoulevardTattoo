@@ -16,7 +16,6 @@ function fetchKunsterID(id) {
       console.error('Der skete en fejl:', error);
     });
 }
-
 // Funktion til at vise kunstnerinformation på siden
 function renderPost(post) {
   // fannger de HTML-elementer, hvor kunstnerinformationen skal vises
@@ -57,3 +56,5 @@ function renderPost(post) {
 
 // kalder funktionen fetchKunsterID med argumentet 70, som er det korrekte ID for den relevante kunster
 fetchKunsterID(70);
+
+
