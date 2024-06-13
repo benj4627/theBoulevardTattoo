@@ -21,7 +21,6 @@ function fetchKunsterID(id) {
 function renderPost(post) {
   // fannger de HTML-elementer, hvor kunstnerinformationen skal vises
   const kunsterTextAboutEl = document.querySelector('.kunsterTextAbout');
-  // Kunstnerens erfaring
   const heroH1KunsterEl = document.querySelector('#benHeaderContainer');
 
   // Henter den kunstnerinformation vi skal bruge fra objektet i API

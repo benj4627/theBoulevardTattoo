@@ -2,7 +2,7 @@
 //fanger de relevante HTML elementer
 let visibleAnimEl = document.querySelectorAll(".slideinAnim");
 //Sætter en værdi for hvor langt man scroller før function aktiverer. 
-let scrollThreshold = 50;
+let scrollThreshold = 10;
 
 function toggleClassScroll() {
   //tilføjer eventListnere som lytter efter scroll-begivenheden. Når brugeren scroller siden, udføres funktionen.
