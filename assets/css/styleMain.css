@@ -549,6 +549,11 @@ h4 {
 
 .galleriContainer {
     height: fit-content; 
+    width: 85%;
+}
+
+.kunstnereTitle {
+    width: 85%;
 }
 
 .galleriGridContainer {
@@ -671,6 +676,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    width: 85%;
 }
 .reviewContainer {
     min-height: 200px;
@@ -760,6 +766,10 @@ h4 {
     border-radius: var(--smallBorderRadius);
     object-fit: cover;
     height: 400px;
+}
+
+.blogPostsEntry {
+    width: 85%;
 }
 
 .blogPostEntryContent {
