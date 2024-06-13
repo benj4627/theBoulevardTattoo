@@ -5,7 +5,7 @@ const baseUrl = 'https://theboulevardtattoo.xn--dittebrgesen-0jb.dk/wp-json/wp/v
 function fetchKunsterID(id) {
   // Henter data fra WordPress API for det angivne kunstner-ID
   fetch(baseUrl + 'posts/' + id)
-    // Håndter succesfuldt svar
+    // Håndter succesfuldt svar og konvererer data til json
     .then(response => response.json())
     .then(post => {
       // Render kunstnerinformationen på siden

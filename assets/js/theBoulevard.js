@@ -4,7 +4,7 @@ let tabBtns = document.querySelectorAll('.tabsBtnContainer button');
 let tabContents = document.querySelectorAll('.tabContent');
 
 
-//declares og tildeler det relevante indhold i et array, til en variabel, som skal bruges til innerHTML
+//tildeler det relevante indhold i et array, til en variabel, som skal bruges til innerHTML
 let tabContent = [
     `
     <div class="tabTextContent">
